@@ -1,8 +1,8 @@
-{% from "macros/links.html" import get_link %}
+
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/bootstrap.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — styleguide</title>
+<link rel="stylesheet" href="../static/bootstrap.css">
+<title>Components — styleguide</title>
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
@@ -26,23 +26,42 @@
       <div class="row">
         <nav class="col-sm-3 col-md-2 d-none d-sm-block section-nav bg-white sidebar">
           <ul class="nav nav-pills flex-column">
-            {% for id, item in bag('menu').items() %}
-              <li{% if this.is_child_of(item.path) %} class="toc-entry toc-h2 active" {% else %} class="toc-entry toc-h2"{% endif %}><a class="nav-link" href="{{ item.path|url }}">{{ item.label }}</a></li>
-	      {% set docs = site.get(item.path) %}
-              {% for child in docs.children recursive %}
-                <li{% if this._path == child._path %} class="toc-entry toc-h4 active" {% else %} class="toc-entry toc-h4"{% endif
-                %}>{{ get_link(child) }}
-                {% if this.is_child_of(child) %}
-                  <ul>{{ loop(child.children) }}</ul>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
+            
+              <li class="toc-entry toc-h2"><a class="nav-link" href="../about/">About</a></li>
+	      
+              
+            
+              <li class="toc-entry toc-h2"><a class="nav-link" href="../brand-assets/">Brand Assets</a></li>
+	      
+              
+            
+              <li class="toc-entry toc-h2"><a class="nav-link" href="../examples">Examples</a></li>
+	      
+              
+            
+              <li class="toc-entry toc-h2 active" ><a class="nav-link" href="../components/">Components</a></li>
+	      
+              
+                <li class="toc-entry toc-h4"><a class="nav-link" href="../components/buttons/">Buttons</a>
+                
+              
+                <li class="toc-entry toc-h4"><a class="nav-link" href="../components/alerts/">Alerts</a>
+                
+              
+            
           </ul>
           
         </nav>
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
-          {% block body %}{% endblock %}
+          
+  <h1>Components</h1>
+  <ul>
+<li><a href="../components/alerts/">Alerts</a></li>
+<li><a href="../components/buttons/">Buttons</a></li>
+</ul>
+
+
         </main>
       </div>
   </div>

@@ -9,4 +9,4 @@ with support for multiple sizes, states, and more.
 ---
 _discoverable: yes
 ---
-_template: buttons-component.html
+_template: alerts-component.html

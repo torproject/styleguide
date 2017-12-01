@@ -1,0 +1,4 @@
+{% macro get_link(page) -%}
+  <a href="{{ page|url }}">{{ page.title }}{%
+    if page.type == 'function' or page.type == 'method' %}(){% endif %}</a>
+{%- endmacro %}
