@@ -1,6 +1,7 @@
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
-$purple:  #59316B !default;
+$purple:  #7D4698 !default;
+$purple-dark: #59316B !default;
 $pink:    #e83e8c !default;
 $red:     #EF243E !default;
 $orange:  #fd7e14 !default;
@@ -28,10 +29,10 @@ $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          $purple-dark !default;
 
 $navbar-dark-color:                 $white !default;
-$navbar-light-color:                $purple !default;
+$navbar-light-color:                $purple-dark !default;
 
 // Local docs variables
 $bd-purple:        #563d7c !default;
