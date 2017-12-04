@@ -1,0 +1,11 @@
+_model: page
+---
+title: Jumbotron
+---
+body:
+
+Lightweight, flexible component for showcasing hero unit style content.
+---
+_discoverable: yes
+---
+_template: jumbotron-component.html

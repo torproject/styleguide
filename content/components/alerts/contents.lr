@@ -1,11 +1,11 @@
 _model: page
 ---
-title: Alerts
+title: Badge
 ---
 body:
 
-Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+Documentation and examples for badges, our small count and labeling component.
 ---
 _discoverable: yes
 ---
-_template: alerts-component.html
+_template: badge-component.html

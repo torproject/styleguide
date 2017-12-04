@@ -1,0 +1,11 @@
+_model: page
+---
+title: Cards
+---
+body:
+
+Bootstrap's cards provide a flexible and extensible content container with multiple variants and options.
+---
+_discoverable: yes
+---
+_template: card-component.html

@@ -1,0 +1,11 @@
+_model: page
+---
+title: Pagination
+---
+body:
+
+Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.
+---
+_discoverable: yes
+---
+_template: pagination-component.html
