@@ -1,3 +1,4 @@
+{% from "macros/links.html" import get_link %}
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/bootstrap.css'|url }}">
@@ -23,24 +24,21 @@
   <div class="page">
     <div class="container-fluid">
       <div class="row">
-        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-white sidebar">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block section-nav bg-white sidebar">
           <ul class="nav nav-pills flex-column">
-            <li{% if this._path == '/' %} class="nav-item active"{% else %} class="nav-item"{% endif
-              %}><a class="nav-link" href="{{ '/'|url }}">Getting Started
-                <span class="sr-only">(current)</span></a></li>
-            {% for href, title in [
-              ['/about', 'About'],
-              ['/brand-assets', 'Brand Assets'],
-              ['/examples', 'Examples'],
-              ['/components', 'Components'],
-            ] %}
-              <li{% if this.is_child_of(href) %} class="nav-item active"{% else %} class="nav-item"{% endif
-                %}><a  class="nav-link" href="{{ href|url }}">
-                  {{ title }} <span class="sr-only">(current)</span></a></li>
+            {% for id, item in bag('menu').items() %}
+              <li{% if this.is_child_of(item.path) %} class="toc-entry toc-h2 active" {% else %} class="toc-entry toc-h2"{% endif %}><a class="nav-link" href="{{ item.path|url }}">{{ item.label }}</a></li>
+	      {% set docs = site.get(item.path) %}
+              {% for child in docs.children recursive %}
+                <li{% if this._path == child._path %} class="toc-entry toc-h4 active" {% else %} class="toc-entry toc-h4"{% endif
+                %}>{{ get_link(child) }}
+                {% if this.is_child_of(child) %}
+                  <ul>{{ loop(child.children) }}</ul>
+                {% endif %}
+              {% endfor %}
             {% endfor %}
           </ul>
-
-
+          
         </nav>
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
