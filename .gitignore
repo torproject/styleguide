@@ -1,6 +1,9 @@
 .sass-cache
 .DS_Store
 
+public/
+
+assets/static
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
