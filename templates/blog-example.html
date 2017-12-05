@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+{% extends "empty.html" %}
+{% block body %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
     <title>Blog Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/static/bootstrap.css'|url }}">
 
     <!-- Custom styles for this template -->
     <link href="blog.css" rel="stylesheet">
@@ -19,7 +19,7 @@
   <body>
 
     <header>
-      <div class="blog-masthead">
+      <div class="blog-masthead bg-dark">
         <div class="container">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
@@ -163,4 +163,5 @@
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
   </body>
-</html>
+{% endblock %}
+
