@@ -10,11 +10,22 @@ body {
 /*
  * Typography
  */
-h1 {
-  padding-bottom: 9px;
-  padding-top: 40px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #eee;
+h6{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $purple;
+}
+p{
+  font-size: 1.3rem; // We need at least 18px minuim +_+
+  color: $gray-900;
+  line-height: 2rem;
+}
+.serif{
+  font-family: $font-family-serif;
+}
+mark,
+.mark{
+  color: $purple;
 }
 
 /*
@@ -82,6 +93,20 @@ h1 {
 .placeholder img {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+//
+// Badges
+//
+.badge{
+  text-transform: uppercase;
+}
+
+//
+// Breadcrumbs
+//
+.breadcrumb{
+  background-color: $white;
 }
 
 //
