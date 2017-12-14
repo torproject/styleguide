@@ -10,21 +10,20 @@ body {
 /*
  * Typography
  */
-h6{
+h6 {
   text-transform: uppercase;
   font-weight: bold;
   color: $purple;
 }
-p{
+p {
   font-size: 1.3rem; // We need at least 18px minuim +_+
   color: $gray-900;
   line-height: 2rem;
 }
-.serif{
+.serif {
   font-family: $font-family-serif;
 }
-mark,
-.mark{
+mark,.mark {
   color: $purple;
 }
 

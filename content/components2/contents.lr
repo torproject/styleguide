@@ -18,17 +18,17 @@ Cards
         <p class="text-muted">Some Description about buttons.</p>
       </div>
       <div class="row bg-light p-5">
-        <div class="col-4 p-1">
+        <div class="col-sm-4 p-1">
           <button type="button" class="btn btn-lg btn-default mr-2">Default</button>
           <button type="button" class="btn btn-lg btn-primary mr-2">Primary</button>
           <button type="button" class="btn btn-lg btn-link mr-2">Link</button>
         </div>
-        <div class="col-4 p-1">
+        <div class="col-sm-4 p-1">
           <button type="button" class="btn btn-default mr-2">Default</button>
           <button type="button" class="btn btn-primary mr-2">Primary</button>
           <button type="button" class="btn btn-link mr-2">Link</button>
         </div>
-        <div class="col-4 p-1">
+        <div class="col-sm-4 p-1">
           <button type="button" class="btn btn-sm btn-default mr-2">Default</button>
           <button type="button" class="btn btn-sm btn-primary mr-2">Primary</button>
           <button type="button" class="btn btn-sm btn-link mr-2">Link</button>
@@ -40,7 +40,7 @@ Cards
         <p class="text-muted">Some Description about Forms.</p>
       </div>
       <div class="row">
-        <form class="bg-light p-5 col-4">
+        <form class="bg-light p-5 col-sm-4">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -147,7 +147,7 @@ Cards
         <p class="text-muted">Some Description about cards.</p>
       </div>
       <div class="row bg-light p-5">
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-body">
               <h4 class="card-title">Special title treatment</h4>
@@ -156,7 +156,7 @@ Cards
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="card">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
