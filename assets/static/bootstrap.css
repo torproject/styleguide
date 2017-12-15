@@ -16,7 +16,7 @@ body {
   border: none; }
 
 .no-background {
-  background-image: none; }
+  background-image: none !important; }
 
 /*
  * Typography
