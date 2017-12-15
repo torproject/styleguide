@@ -96,6 +96,12 @@ h1 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
 
+/*
+ * Forms
+ */
+.form-wide {
+  width: 100% !important; }
+
 .bd-callout {
   padding: 1.25rem;
   margin-top: 1.25rem;
