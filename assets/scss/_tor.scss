@@ -31,7 +31,18 @@ body {
     src: url('fonts/SourceSansPro/SourceSansPro-Italic.ttf');
 }
 
+@font-face {
+  font-family: Source Light Pro;
+  src: url('fonts/SourceSansPro/SourceSansPro-Light.ttf');
+}
+
+@font-face {
+  font-family: Source Serif Light Pro;
+  src: url('fonts/SourceSansPro/SourceSansPro-LightItalic.ttf');
+}
+
 h1 {
+  font-family: Source Light Pro !important;
   padding-bottom: 9px;
   padding-top: 40px;
   margin-bottom: 20px;
