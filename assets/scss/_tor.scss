@@ -49,6 +49,10 @@ h1 {
   border-bottom: 1px solid #eee;
 }
 
+.font-weight-light {
+  font-family: Source Light Pro !important;
+}
+
 /*
  * Nav
  */
@@ -121,6 +125,10 @@ h1 {
  */
 .form-wide {
   width: 100% !important;
+
+  input {
+    padding: 20px !important;
+  }
 }
 
 //
