@@ -1,9 +1,9 @@
 .sass-cache
 .DS_Store
 
-public/
-
-assets/static
+public/.lektor
+public/javascript
+public/scss
 
 ### Emacs ###
 # -*- mode: gitignore; -*-

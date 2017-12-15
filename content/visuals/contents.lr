@@ -25,23 +25,23 @@ Identity Assets
               <h6 class="p-2 text-center">Purple</h6>
           </div>
           <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white">#27AE60</div>
+              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-dark text-white">#27AE60</div>
               <h6 class="p-2 text-center">Dark Purple</h6>
           </div>
           <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white">#2980B9</div>
+              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-success text-white">#2980B9</div>
               <h6 class="p-2 text-center">Green</h6>
           </div>
           <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white">#2C3E50</div>
+              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-light text-black">#2C3E50</div>
               <h6 class="p-2 text-center">Grey</h6>
           </div>
           <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white">#2C3E50</div>
+              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-secondary text-black">#2C3E50</div>
               <h6 class="p-2 text-center">Dark Grey</h6>
           </div>
           <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white">#2C3E50</div>
+              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-white text-black">#2C3E50</div>
               <h6 class="p-2 text-center">White</h6>
           </div>
       </div>

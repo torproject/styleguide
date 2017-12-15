@@ -1,0 +1,117 @@
+
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../static/bootstrap.css">
+<title>Breadcrumb — styleguide</title>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="#">The Tor Project <span>Styleguide</span></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"></li>
+          </ul>
+          <div class="mt-2 mt-md-0">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Download Tor Browser</button>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <div class="page">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block section-nav bg-white sidebar">
+          <ul class="nav nav-pills flex-column">
+            
+              <li class="toc-entry toc-h2"><a class="nav-link" href="../../about/">About</a></li>
+	      
+              
+            
+              <li class="toc-entry toc-h2"><a class="nav-link" href="../../getting-started/">Getting Started</a></li>
+	      
+              
+            
+              <li class="toc-entry toc-h2"><a class="nav-link" href="../../visuals/">Visuals</a></li>
+	      
+              
+            
+              <li class="toc-entry toc-h2"><a class="nav-link" href="../../components2/">Components</a></li>
+	      
+              
+            
+          </ul>
+          
+        </nav>
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+          
+  <h1>Breadcrumb</h1>
+
+  <p>Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS.</p>
+
+
+    <h2 id="overview">Overview</h2>
+
+<p>Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+
+<div class="bd-example">
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code class="highlighter-rouge">aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code class="highlighter-rouge">&lt;nav&gt;</code> element, as well as applying an <code class="highlighter-rouge">aria-current="page"</code> to the last item of the set to indicate that it represents the current page.</p>
+
+<p>For more information, see the <a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb">WAI-ARIA Authoring Practices for the breadcrumb pattern</a>.</p>
+
+
+        </main>
+      </div>
+  </div>
+  <footer>
+    &copy; Copyright 2017 by Tor Project.
+  </footer>
+</body>
