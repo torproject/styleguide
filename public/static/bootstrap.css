@@ -11,9 +11,22 @@
 body {
   padding-top: 3.5rem; }
 
+/* Reset */
+.no-border {
+  border: none; }
+
+.no-background {
+  background-image: none !important; }
+
 /*
  * Typography
  */
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("fonts/SourceSansPro/SourceSansPro-Regular.ttf"); }
+@font-face {
+  font-family: Source Serif Pro;
+  src: url("fonts/SourceSansPro/SourceSansPro-Italic.ttf"); }
 h1 {
   padding-bottom: 9px;
   padding-top: 40px;
@@ -727,7 +740,7 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #fcf8e3; }
+  background-color: #cbbde2; }
 
 .list-unstyled {
   padding-left: 0;
