@@ -20,33 +20,21 @@ body {
 /*
  * Typography
  */
-
-@font-face {
-     font-family: Source Sans Pro;
-     src: url('fonts/SourceSansPro/SourceSansPro-Regular.ttf');
+h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $purple;
 }
-
-@font-face {
-    font-family: Source Serif Pro;
-    src: url('fonts/SourceSansPro/SourceSansPro-Italic.ttf');
+p {
+  font-size: 1.3rem; // We need at least 18px minuim +_+
+  color: $gray-900;
+  line-height: 2rem;
 }
-
-@font-face {
-  font-family: Source Light Pro;
-  src: url('fonts/SourceSansPro/SourceSansPro-Light.ttf');
+.serif {
+  font-family: $font-family-serif;
 }
-
-@font-face {
-  font-family: Source Serif Light Pro;
-  src: url('fonts/SourceSansPro/SourceSansPro-LightItalic.ttf');
-}
-
-h1 {
-  font-family: Source Light Pro !important;
-  padding-bottom: 9px;
-  padding-top: 40px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #eee;
+mark,.mark {
+  color: $purple;
 }
 
 .font-weight-light {
@@ -137,6 +125,20 @@ h1 {
   input {
     padding: 20px !important;
   }
+}
+
+//
+// Badges
+//
+.badge{
+  text-transform: uppercase;
+}
+
+//
+// Breadcrumbs
+//
+.breadcrumb{
+  background-color: $white;
 }
 
 //
