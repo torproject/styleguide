@@ -3,8 +3,8 @@
  */
 
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
-body {
-  padding-top: 3.5rem;
+.page {
+  padding-top: 4.5rem;
 }
 
 /* Reset */
@@ -15,6 +15,10 @@ body {
 
 .no-background {
   background-image: none !important;
+}
+
+.content-scroll {
+  overflow-y: scroll;
 }
 
 /*

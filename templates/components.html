@@ -1,0 +1,239 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<nav id="components-nav" class="d-none d-xl-block col-xl-2 bd-toc">
+  <ul class="nav nav-pills flex-column sticky-top">Components
+    <li class="nav-item">
+      <a class="nav-link" href="#buttons">Buttons</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#forms">Forms</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#forms">Badges</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#forms">Tables</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#forms">Cards</a>
+    </li>
+  </ul>
+</nav>
+
+<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" data-spy="scroll" data-target="#components-nav" data-offset="0">
+  <h1>{{ this.title }}</h1>
+
+  {{ this.body }}
+  <div class="page-header mb-4 mt-5">
+    <h3 id="buttons">Buttons</h3>
+    <p class="text-muted">Some Description about buttons.</p>
+  </div>
+  <div class="row bg-light p-5 col-sm-4">
+    <div class="col-sm-4 p-1">
+      <button type="button" class="btn btn-lg btn-default mr-2">Default</button>
+      <button type="button" class="btn btn-lg btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-lg btn-link mr-2">Link</button>
+    </div>
+    <div class="col-sm-4 p-1">
+      <button type="button" class="btn btn-default mr-2">Default</button>
+      <button type="button" class="btn btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-link mr-2">Link</button>
+    </div>
+    <div class="col-sm-4 p-1">
+      <button type="button" class="btn btn-sm btn-default mr-2">Default</button>
+      <button type="button" class="btn btn-sm btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-sm btn-link mr-2">Link</button>
+    </div>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="forms">Forms</h3>
+    <p class="text-muted">Some Description about Forms.</p>
+  </div>
+  <div class="row">
+    <form class="bg-light p-5 col-sm-4">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">
+          Check me out
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="badges">Badges</h3>
+    <p class="text-muted">Some Description about badges.</p>
+  </div>
+  <div class="p-5 bg-light">
+    <h2>Example heading <span class="badge badge-primary">New</span></h2>
+    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+    <h6>Example heading <span class="badge-pill badge-primary">New</span></h6>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="tables">Tables</h3>
+    <p class="text-muted">Some Description about tables.</p>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table">
+        <thead>
+          <tr>
+	    <th>#</th>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+	    <td>1</td>
+	    <td>Mark</td>
+	    <td>Otto</td>
+	    <td>@mdo</td>
+          </tr>
+          <tr>
+	    <td>2</td>
+	    <td>Jacob</td>
+	    <td>Thornton</td>
+	    <td>@fat</td>
+          </tr>
+          <tr>
+	    <td>3</td>
+	    <td>Larry</td>
+	    <td>the Bird</td>
+	    <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+	    <th>#</th>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+	    <td>1</td>
+	    <td>Mark</td>
+	    <td>Otto</td>
+	    <td>@mdo</td>
+          </tr>
+          <tr>
+	    <td>2</td>
+	    <td>Jacob</td>
+	    <td>Thornton</td>
+	    <td>@fat</td>
+          </tr>
+          <tr>
+	    <td>3</td>
+	    <td>Larry</td>
+	    <td>the Bird</td>
+	    <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="cards">Cards</h3>
+    <p class="text-muted">Some Description about cards.</p>
+  </div>
+  <div class="row bg-light p-5">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Special title treatment</h4>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="pagination">Pagination</h3>
+    <p class="text-muted">Some Description about pagination.</p>
+  </div>
+  <div class="bg-light p-5">
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <span class="page-link">Previous</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+          <span class="page-link">
+	    2
+	    <span class="sr-only">(current)</span>
+          </span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="alerts">Alerts</h3>
+    <p class="text-muted">Some Description about alerts.</p>
+  </div>
+  <div class="p-5 bg-light">
+    <div class="alert alert-primary" role="alert">
+      This is a primary alert—check it out!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      This is a secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+      This is a success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+      This is a danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+      This is a warning alert—check it out!
+    </div>
+  </div>
+  
+</main>
+{% endblock %}

@@ -1,6 +1,15 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
+<nav id="components-nav" class="d-none d-xl-block col-xl-2 bd-toc">
+  <ul class="nav nav-pills flex-column sticky-top">
+    
+  </ul>
+</nav>
+<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" data-spy="scroll" data-target="#components-nav" data-offset="0">
   <h1>{{ this.title }}</h1>
+
   {{ this.body }}
+  
+</main>
 {% endblock %}
