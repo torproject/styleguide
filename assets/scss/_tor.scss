@@ -34,23 +34,20 @@ p {
   color: $gray-900;
   line-height: 2rem;
 }
-.serif {
-  font-family: $font-family-serif;
+.font-family-serif {
+  font-family: $font-family-serif !important;
 }
-mark,.mark {
-  color: $purple;
-}
-
 .font-weight-light {
   font-family: Source Light Pro !important;
 }
-
 .display-5 {
   font-size: 1.5em;
 }
-
 .display-6 {
   font-size: 1.3em
+}
+mark,.mark {
+  color: $purple;
 }
 
 /*

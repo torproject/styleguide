@@ -20,29 +20,29 @@ Identity Assets
         <p class="text-muted">Some Description</p>
       </div>
       <div class="row">
-          <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white">#7D4698</div>
-              <h6 class="p-2 text-center">Purple</h6>
+          <div class="col-4">
+              <div class="rounded pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white small">#7D4698</div>
+              <h6 class="pt-3 text-left">Purple</h6>
           </div>
-          <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-dark text-white">#27AE60</div>
-              <h6 class="p-2 text-center">Dark Purple</h6>
+          <div class="col-4">
+              <div class="rounded pt-5 pl-2 pb-2 mt-3 mb-2 bg-dark text-white small">#27AE60</div>
+              <h6 class="pt-3 text-left">Dark Purple</h6>
           </div>
-          <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-success text-white">#2980B9</div>
-              <h6 class="p-2 text-center">Green</h6>
+          <div class="col-4">
+              <div class="rounded pt-5 pl-2 pb-2 mt-3 mb-2 bg-success text-white small">#2980B9</div>
+              <h6 class="pt-3 text-left">Green</h6>
           </div>
-          <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-light text-black">#2C3E50</div>
-              <h6 class="p-2 text-center">Grey</h6>
+          <div class="col-4">
+              <div class="rounded pt-5 pl-2 pb-2 mt-3 mb-2 bg-light text-black small">#F8F9FA</div>
+              <h6 class="pt-3 text-left">Grey</h6>
           </div>
-          <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-secondary text-black">#2C3E50</div>
-              <h6 class="p-2 text-center">Dark Grey</h6>
+          <div class="col-4">
+              <div class="rounded pt-5 pl-2 pb-2 mt-3 mb-2 bg-secondary text-white small">#2C3E50</div>
+              <h6 class="pt-3 text-left">Dark Grey</h6>
           </div>
-          <div class="col-xs-6 col-sm-3 m-2 border">
-              <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-white text-black">#2C3E50</div>
-              <h6 class="p-2 text-center">White</h6>
+          <div class="col-4">
+              <div class="rounded pt-5 pl-2 pb-2 mt-3 mb-2 bg-white text-black small border">#FFFFFF</div>
+              <h6 class="pt-3 text-left">White</h6>
           </div>
       </div>
 
@@ -55,43 +55,132 @@ Identity Assets
 </div>
       <div class="bg-light p-5">
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-12">col-12</div>
+          <div class="col-12">
+            <p class="bg-primary p-3 text-white small">
+               12
+            </p>
+          </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-4">col-4</div>
-          <div class="bg-primary p-3 col-8">col-8</div>
+          <div class="col-4">
+            <p class="bg-primary p-3 text-white small">
+               4
+            </p>
+          </div>
+          <div class="col-8">
+            <p class="bg-primary p-3 text-white small">
+               8
+            </p>
+        </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-3">col-3</div>
-          <div class="bg-primary p-3 col-9">col-9</div>
+          <div class="col-3">
+            <p class="bg-primary p-3 text-white small">
+               3
+            </p>
+          </div>
+          <div class="col-9">
+            <p class="bg-primary p-3 text-white small">
+               9
+            </p>
+          </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-2">col-2</div>
-          <div class="bg-primary p-3 col-2">col-2</div>
-          <div class="bg-primary p-3 col-2">col-2</div>
-          <div class="bg-primary p-3 col-2">col-2</div>
-          <div class="bg-primary p-3 col-2">col-2</div>
+          <div class="col-2">
+            <p class="bg-primary p-3 text-white small">
+               2
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="bg-primary p-3 text-white small">
+               2
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="bg-primary p-3 text-white small">
+               2
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="bg-primary p-3 text-white small">
+               2
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="bg-primary p-3 text-white small">
+               2
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="bg-primary p-3 text-white small">
+               2
+            </p>
+          </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-3">col-3</div>
-          <div class="bg-primary p-3 col-3">col-3</div>
-          <div class="bg-primary p-3 col-3">col-3</div>
-          <div class="bg-primary p-3 col-3">col-3</div>
+          <div class="col-3">
+            <p class="bg-primary p-3 text-white small">
+               3
+            </p>
+          </div>
+          <div class="col-3">
+            <p class="bg-primary p-3 text-white small">
+               3
+            </p>
+          </div>
+          <div class="col-3">
+            <p class="bg-primary p-3 text-white small">
+               3
+            </p>
+          </div>
+          <div class="col-3">
+            <p class="bg-primary p-3 text-white small">
+               3
+            </p>
+          </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-4">col-4</div>
-          <div class="bg-primary p-3 col-4">col-4</div>
-          <div class="bg-primary p-3 col-4">col-4</div>
+          <div class="col-4">
+            <p class="bg-primary p-3 text-white small">
+               4
+            </p>
+          </div>
+          <div class="col-4">
+            <p class="bg-primary p-3 text-white small">
+               4
+            </p>
+          </div>
+          <div class="col-4">
+            <p class="bg-primary p-3 text-white small">
+               4
+            </p>
+          </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-6">col-6</div>
-          <div class="bg-primary p-3 col-6">col-6</div>
+            <div class="col-6">
+              <p class="bg-primary p-3 text-white small">
+                 6
+              </p>
+            </div>
+            <div class="col-6">
+              <p class="bg-primary p-3 text-white small">
+                 6
+              </p>
+            </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-8 offset-2">col-6</div>
+          <div class="col-8 offset-2">
+            <p class="bg-primary p-3 text-white small">
+               8
+            </p>
+          </div>
         </div>
         <div class="row mb-1">
-          <div class="bg-primary p-3 col-6 offset-3">col-6</div>
+          <div class="col-6 offset-3">
+            <p class="bg-primary p-3 text-white small">
+               6
+            </p>
+          </div>
         </div>
       </div>
 
@@ -101,28 +190,96 @@ Identity Assets
       </div>
       <div class="row">
         <div class="col-12">
+          <p class="text-black small text-muted">H1</p>
           <h1>Privacy is a right, not a privilege</h1>
+          <p class="text-black small text-muted">H2</p>
           <h2>Privacy is a right, not a privilege.</h2>
+          <p class="text-black small text-muted">H3</p>
           <h3>Privacy is a right, not a privilege</h3>
+          <p class="text-black small text-muted">H4</p>
           <h4>Privacy is a right, not a privilege</h4>
+          <p class="text-black small text-muted">H5</p>
           <h5>Privacy is a right, not a privilege</h5>
+          <p class="text-black small text-muted">H6</p>
           <h6>Privacy is a right, not a privilege</h6>
-          <h1 class="display-1">Privacy is a right, not a privilege</h1>
-          <h1 class="display-2">Privacy is a right, not a privilege</h1>
-          <h1 class="display-3">Privacy is a right, not a privilege</h1>
-          <h1 class="display-4">Privacy is a right, not a privilege </h1>
+
+          <p class="text-black small pt-5 text-muted">H1 display</p>
+          <h1 class="display-1">Why Anonymity Matters</h1>
+          <p class="text-black small text-muted">H2 display</p>
+          <h1 class="display-2">Why Anonymity Matters</h1>
+          <p class="text-black small text-muted">H3 display</p>
+          <h1 class="display-3">Why Anonymity Matters</h1>
+          <p class="text-black small text-muted">H4 display</p>
+          <h1 class="display-4">Why Anonymity Matters</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col pt-3">
-          <p class="font-size-lg">Privacy is a right, not a privilege.<a href="#">nostrud voluptate</a> Tor protects your identity online—namely your IP address—by encrypting your traffic in at least three layers and bouncing it through a chain of three volunteer computers chosen among thousands around the world, each of which strips off just one layer of encryption before bouncing your data to the next computer. All of that makes it very difficult for anyone to trace your connection from origin to destination—not the volunteer computers relaying your information, not your internet service provider, and not the websites or online services you visit.
-            That overhaul should cement <mark>Tor’s reputation as an indispensable anonymity tool</mark>, says Marc Rogers, a security researcher for tech firm Cloudflare, who has also worked on a still-in-development Tor-based network router project himself. “It’s still pretty much the only game in town,” he says. “After this update, I can say that yes, Tor is the best privacy tool out there.”
-            Here's how you can use Tor today, whether you want to want to browse controversial sites in peace, or send messages the NSA can't peep.
+        <div class="col-12 pt-5">
+          <p class="text-black small text-muted">Paragraph</p>
+        </div>
+        <div class="col">
+          <p>
+            Privacy experts warn that law enforcement, intelligence services, and malicious hackers run their own exit nodes for exactly that surveillance purpose. It's critical, then, <mark>for Tor users to only visit HTTPS-protected websites</mark> to ensure that the information that passes between the browser and the site remains encrypted.
           </p>
         </div>
-        <div class="col pt-3">
-          <p class="font-size-lg serif">Lorem ipsum Nostrud Duis minim Ut id incididunt deserunt consequat id irure <a href="#">nostrud voluptate</a> aliquip Ut eu aliqua eu sed anim aute laborum est officia consectetur irure aliquip ex veniam laboris cillum Duis occaecat fugiat adipisicing ex in dolore ullamco ad ullamco velit nisi irure ad tempor minim fugiat fugiat aute Excepteur in id culpa id velit proident commodo enim cillum Ut quis dolor cillum enim ullamco est in eu laboris Ut Excepteur nisi aliquip occaecat deserunt incididunt eiusmod aute Excepteur Excepteur non ut ut fugiat nostrud laboris dolore Excepteur id qui eiusmod esse mollit fugiat eiusmod dolore quis quis aliquip reprehenderit sint commodo dolore proident officia Duis eiusmod esse cupidatat id consequat aliqua Excepteur dolore tempor consequat laboris dolore sit aliqua eu sed dolore laboris ad tempor et in incididunt dolore dolor irure anim adipisicing cillum dolor in laborum laboris veniam voluptate Ut irure ad dolor irure in ex sint dolor deserunt ut adipisicing est pariatur Excepteur dolore ullamco pariatur in non Excepteur mollit consequat laborum ullamco reprehenderit ea id ut anim ex consectetur occaecat.</p>
+        <div class="col">
+          <p class="font-family-serif">
+            The Tor network is a group of volunteer-operated servers that allows people to improve their privacy and security on the Internet. Tor's users employ <a href="#">this network</a> by connecting through a series of virtual tunnels rather than making a direct connection, thus allowing both organizations and individuals to share information over public networks without compromising their privacy.
+          </p>
+          </div>
+          <div class="col">
+            <p class="text-right">
+          شبكة تور هي مجموعة من الخوادم التي يديرها المتطوعون والتي تسمح للناس بتحسين خصوصيتهم وأمنهم على الإنترنت. يستخدم مستخدمو تور هذه الشبكة من خلال الاتصال من خلال سلسلة من الأنفاق الافتراضية بدلا من إجراء اتصال مباشر، مما يسمح للمنظمات والأفراد على حد سواء لتبادل المعلومات عبر الشبكات العامة دون المساس بخصوصيتهم. وعلى نفس المنوال، يعتبر تور أداة فعالة للرقابة على الرقابة، مما يسمح للمستخدمين بالوصول إلى وجهات أو محتويات محجوبة. يمكن أيضا استخدام تور كبنة بناء لمطوري البرمجيات لإنشاء أدوات اتصال جديدة مع ميزات خصوصية مضمنة.
+            </p>
+          </div>
+      </div>
+
+      <div class="page-header mb-4 mt-5">
+        <h3>Identity Assets</h3>
+        <p class="text-muted">Some Description</p>
+      </div>
+      <div class="row">
+        <div class="col-6">
+            <div class="image border p-5">
+                <img src="/visuals/color.svg">
+            </div>
+            <h6 class="text-left pt-3">Default</h6>
+        </div>
+        <div class="col-3">
+            <div class="image border p-5">
+                <img src="/visuals/purple.svg">
+            </div>
+            <h6 class="text-left pt-3">Purple</h6>
+        </div>
+        <div class="col-3">
+            <div class="image border p-5">
+              <img src="/visuals/black.svg">
+            </div>
+            <h6 class="text-left pt-3">Black</h6>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+              <div class="image border bg-primary p-5">
+                <img src="/visuals/white.svg">
+              </div>
+              <h6 class="text-left pt-3">Invert</h6>
+          </div>
+          <div class="col-3">
+              <div class="image border bg-dark p-5">
+                <img src="/visuals/white.svg">
+              </div>
+              <h6 class="text-left pt-3">Dark</h6>
+          </div>
+          <div class="col-6">
+              <div class="border p-5 text-left">
+                <h6>Download Tor Logo Assets</h6>
+                <p>This package includes .png and .svg files</p>
+              </div>
+          </div>
         </div>
       </div>
+
+
   </div>
 </body>
