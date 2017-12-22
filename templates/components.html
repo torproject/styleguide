@@ -2,32 +2,23 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 
-<nav id="components-nav" class="d-none d-xl-block col-xl-2 bd-toc">
-  <ul class="nav nav-pills flex-column sticky-top">Components
-    <li class="nav-item">
-      <a class="nav-link" href="#buttons">Buttons</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#forms">Forms</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#forms">Badges</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#forms">Tables</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#forms">Cards</a>
-    </li>
+<nav id="components-nav" class="nav flex-column d-none d-xl-block col-xl-2 bd-toc">
+  <ul class="nav nav-pills flex-column sticky-top">
+    {% for id, item in bag('components').items() %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.path }}">{{ item.label }}</a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>
 
-<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" data-spy="scroll" data-target="#components-nav" data-offset="0">
+<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 content-scroll" data-spy="scroll" data-target="#components-nav" data-offset="0">
   <h1>{{ this.title }}</h1>
 
   {{ this.body }}
+  <h1 id="buttons"> </h1>
   <div class="page-header mb-4 mt-5">
-    <h3 id="buttons">Buttons</h3>
+    <h3>Buttons</h3>
     <p class="text-muted">Some Description about buttons.</p>
   </div>
   <div class="row bg-light p-5 col-sm-4">
@@ -47,9 +38,10 @@
       <button type="button" class="btn btn-sm btn-link mr-2">Link</button>
     </div>
   </div>
-
+  
+  <h1 id="forms"> </h1>
   <div class="page-header mb-4 mt-5">
-    <h3 id="forms">Forms</h3>
+    <h3>Forms</h3>
     <p class="text-muted">Some Description about Forms.</p>
   </div>
   <div class="row">
@@ -73,8 +65,9 @@
     </form>
   </div>
 
+  <h1 id="badges"> </h1>
   <div class="page-header mb-4 mt-5">
-    <h3 id="badges">Badges</h3>
+    <h3>Badges</h3>
     <p class="text-muted">Some Description about badges.</p>
   </div>
   <div class="p-5 bg-light">
@@ -154,8 +147,9 @@
     </div>
   </div>
 
+  <h1 id="cards"> </h1>
   <div class="page-header mb-4 mt-5">
-    <h3 id="cards">Cards</h3>
+    <h3>Cards</h3>
     <p class="text-muted">Some Description about cards.</p>
   </div>
   <div class="row bg-light p-5">
@@ -170,7 +164,7 @@
     </div>
     <div class="col-md-6">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="/static/images/index.svg" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title">Card title</h4>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -188,8 +182,10 @@
     </div>
   </div>
 
+
+  <h1 id="pagination"> </h1>
   <div class="page-header mb-4 mt-5">
-    <h3 id="pagination">Pagination</h3>
+    <h3>Pagination</h3>
     <p class="text-muted">Some Description about pagination.</p>
   </div>
   <div class="bg-light p-5">
@@ -234,6 +230,42 @@
       This is a warning alert—check it out!
     </div>
   </div>
+
+  <h1 id="scrollspy"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Scrollspy</h3>
+    <p class="text-muted">Some Description about scrollspy.</p>
+  </div>
+  <div class="p-5 bg-light">
+    <div class="bd-example">
+      <div class="row">
+	<div class="col-4">
+	  <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action active" href="#list-item-1">Item 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+	  </div>
+	</div>
+	<div class="col-8">
+	  <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <h4 id="list-item-1" style="">Item 1</h4>
+            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+            <h4 id="list-item-2" style="">Item 2</h4>
+            <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+            <h4 id="list-item-3" style="">Item 3</h4>
+            <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+            <h4 id="list-item-4" style="">Item 4</h4>
+            <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+
+  
+  {% include 'footer.html' %}
+
   
 </main>
 {% endblock %}

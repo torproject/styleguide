@@ -1,5 +1,6 @@
 {% from "macros/links.html" import get_link %}
 <!doctype html>
+<html lang="en">
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/bootstrap.css'|url }}">
 <title>{% block title %}Welcome{% endblock %} — styleguide</title>
@@ -44,12 +45,18 @@
 	</div>
 
         {% block body %}{% endblock %}
+	
       </div>
+    </div>
+  
+   
   </div>
   <footer>
-    &copy; Copyright 2017 by Tor Project.
     <script src="{{ '/static/js/jquery-3.2.1.min.js'|url }}" ></script>
     <script src="{{ '/static/js/popper.min.js'|url }}" ></script>
     <script src="{{ '/static/js/bootstrap.bundle.min.js'|url }}" ></script>
+    <script src="{{ '/static/js/scrollspy.min.js'|url }}" ></script>    
+
   </footer>
 </body>
+</html>

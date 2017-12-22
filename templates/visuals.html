@@ -1,0 +1,191 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<nav id="visuals-nav" class="nav flex-column d-none d-xl-block col-xl-2 bd-toc">
+  <ul class="nav nav-pills flex-column sticky-top">
+    {% for id, item in bag('visuals').items() %}
+    <li class="nav-item">
+      <a class="nav-link" href="{{ item.path }}">{{ item.label }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 content-scroll" data-spy="scroll" data-target="#visuals-nav" data-offset="0">
+  <h1>{{ this.title }}</h1>
+
+  {{ this.body }}
+
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="colors">Colors</h3>
+    <p class="text-muted">Some Description</p>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-3 m-2 border">
+      <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-primary text-white">#7D4698</div>
+      <h6 class="p-2 text-center">Purple</h6>
+    </div>
+    <div class="col-xs-6 col-sm-3 m-2 border">
+      <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-dark text-white">#27AE60</div>
+      <h6 class="p-2 text-center">Dark Purple</h6>
+    </div>
+    <div class="col-xs-6 col-sm-3 m-2 border">
+      <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-success text-white">#2980B9</div>
+      <h6 class="p-2 text-center">Green</h6>
+    </div>
+    <div class="col-xs-6 col-sm-3 m-2 border">
+      <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-light text-black">#2C3E50</div>
+      <h6 class="p-2 text-center">Grey</h6>
+    </div>
+    <div class="col-xs-6 col-sm-3 m-2 border">
+      <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-secondary text-black">#2C3E50</div>
+      <h6 class="p-2 text-center">Dark Grey</h6>
+    </div>
+    <div class="col-xs-6 col-sm-3 m-2 border">
+      <div class="pt-5 pl-2 pb-2 mt-3 mb-2 bg-white text-black">#2C3E50</div>
+      <h6 class="p-2 text-center">White</h6>
+    </div>
+  </div>
+
+  <h1 id="grid"></h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Grid</h3>
+    <p class="text-muted">Some Description about grids</p>
+  </div>
+  <div class="bg-light p-5">
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-12">col-12</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-4">col-4</div>
+      <div class="bg-primary p-3 col-8">col-8</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-3">col-3</div>
+      <div class="bg-primary p-3 col-9">col-9</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-2">col-2</div>
+      <div class="bg-primary p-3 col-2">col-2</div>
+      <div class="bg-primary p-3 col-2">col-2</div>
+      <div class="bg-primary p-3 col-2">col-2</div>
+      <div class="bg-primary p-3 col-2">col-2</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-3">col-3</div>
+      <div class="bg-primary p-3 col-3">col-3</div>
+      <div class="bg-primary p-3 col-3">col-3</div>
+      <div class="bg-primary p-3 col-3">col-3</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-4">col-4</div>
+      <div class="bg-primary p-3 col-4">col-4</div>
+      <div class="bg-primary p-3 col-4">col-4</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-6">col-6</div>
+      <div class="bg-primary p-3 col-6">col-6</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-8 offset-2">col-6</div>
+    </div>
+    <div class="row mb-1">
+      <div class="bg-primary p-3 col-6 offset-3">col-6</div>
+    </div>
+  </div>
+
+  <h1 id="typography"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Typography</h3>
+    <p class="text-muted">Some Description about headings and body text.</p>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h1>Privacy is a right, not a privilege</h1>
+      <h2>Privacy is a right, not a privilege.</h2>
+      <h3>Privacy is a right, not a privilege</h3>
+      <h4>Privacy is a right, not a privilege</h4>
+      <h5>Privacy is a right, not a privilege</h5>
+      <h6>Privacy is a right, not a privilege</h6>
+      <h1 class="display-1">Privacy is a right, not a privilege</h1>
+      <h1 class="display-2">Privacy is a right, not a privilege</h1>
+      <h1 class="display-3">Privacy is a right, not a privilege</h1>
+      <h1 class="display-4">Privacy is a right, not a privilege </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 pt-5">
+      <p class="text-black small text-muted">Paragraph</p>
+    </div>
+    <div class="col">
+      <p>
+        Privacy experts warn that law enforcement, intelligence services, and malicious hackers run their own exit nodes for exactly that surveillance purpose. It's critical, then, <mark>for Tor users to only visit HTTPS-protected websites</mark> to ensure that the information that passes between the browser and the site remains encrypted.
+      </p>
+    </div>
+    <div class="col">
+      <p class="font-family-serif">
+        The Tor network is a group of volunteer-operated servers that allows people to improve their privacy and security on the Internet. Tor's users employ <a href="#">this network</a> by connecting through a series of virtual tunnels rather than making a direct connection, thus allowing both organizations and individuals to share information over public networks without compromising their privacy.
+      </p>
+    </div>
+    <div class="col">
+      <p class="text-right">
+        شبكة تور هي مجموعة من الخوادم التي يديرها المتطوعون والتي تسمح للناس بتحسين خصوصيتهم وأمنهم على الإنترنت. يستخدم مستخدمو تور هذه الشبكة من خلال الاتصال من خلال سلسلة من الأنفاق الافتراضية بدلا من إجراء اتصال مباشر، مما يسمح للمنظمات والأفراد على حد سواء لتبادل المعلومات عبر الشبكات العامة دون المساس بخصوصيتهم. وعلى نفس المنوال، يعتبر تور أداة فعالة للرقابة على الرقابة، مما يسمح للمستخدمين بالوصول إلى وجهات أو محتويات محجوبة. يمكن أيضا استخدام تور كبنة بناء لمطوري البرمجيات لإنشاء أدوات اتصال جديدة مع ميزات خصوصية مضمنة.
+      </p>
+    </div>
+  </div>
+
+  <h1 id="assets"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Identity Assets</h3>
+    <p class="text-muted">Some Description</p>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="image border p-5">
+        <img src="/visuals/color.svg">
+      </div>
+      <h6 class="text-left pt-3">Default</h6>
+    </div>
+    <div class="col-3">
+      <div class="image border p-5">
+        <img src="/visuals/purple.svg">
+      </div>
+      <h6 class="text-left pt-3">Purple</h6>
+    </div>
+    <div class="col-3">
+      <div class="image border p-5">
+        <img src="/visuals/black.svg">
+      </div>
+      <h6 class="text-left pt-3">Black</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div class="image border bg-primary p-5">
+        <img src="/visuals/white.svg">
+      </div>
+      <h6 class="text-left pt-3">Invert</h6>
+    </div>
+    <div class="col-3">
+      <div class="image border bg-dark p-5">
+        <img src="/visuals/white.svg">
+      </div>
+      <h6 class="text-left pt-3">Dark</h6>
+    </div>
+    <div class="col-6">
+      <div class="border p-5 text-left">
+        <h6>Download Tor Logo Assets</h6>
+        <p>This package includes .png and .svg files</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% include 'footer.html' %}
+
+</main>
+{% endblock %}
