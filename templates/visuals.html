@@ -5,9 +5,9 @@
 <nav id="visuals-nav" class="nav flex-column d-none d-xl-block col-xl-2 bd-toc">
   <ul class="nav nav-pills flex-column sticky-top">
     {% for id, item in bag('visuals').items() %}
-    <li class="nav-item">
-      <a class="nav-link" href="{{ item.path }}">{{ item.label }}</a>
-    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.path }}">{{ item.label }}</a>
+      </li>
     {% endfor %}
   </ul>
 </nav>
@@ -17,9 +17,9 @@
 
   {{ this.body }}
 
-
+  <h1 id="colors"> </h1>
   <div class="page-header mb-4 mt-5">
-    <h3 id="colors">Colors</h3>
+    <h3>Colors</h3>
     <p class="text-muted">Some Description</p>
   </div>
   <div class="row">

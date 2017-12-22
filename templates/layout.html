@@ -29,7 +29,7 @@
           <nav id="bd-docs-nav" class="collapse bd-links">
             <ul class="nav nav-pills flex-column">
               {% for id, item in bag('menu').items() %}
-              <li{% if this.is_child_of(item.path) %} class="toc-entry toc-h2 active" {% else %} class="toc-entry toc-h2"{% endif %}><a class="nav-link" href="{{ item.path|url }}">{{ item.label }}</a></li>
+              <li{% if this.is_child_of(item.path) %} class="nav-item toc-entry toc-h2 active" {% else %} class="toc-entry toc-h2"{% endif %}><a class="nav-link" href="{{ item.path|url }}">{{ item.label }}</a></li>
 	      {% set docs = site.get(item.path) %}
               {% for child in docs.children recursive %}
               <li{% if this._path == child._path %} class="toc-entry toc-h4 active" {% else %} class="toc-entry toc-h4"{% endif
@@ -54,8 +54,9 @@
   <footer>
     <script src="{{ '/static/js/jquery-3.2.1.min.js'|url }}" ></script>
     <script src="{{ '/static/js/popper.min.js'|url }}" ></script>
-    <script src="{{ '/static/js/bootstrap.bundle.min.js'|url }}" ></script>
+    <script src="{{ '/static/js/util.min.js'|url }}" ></script>  
     <script src="{{ '/static/js/scrollspy.min.js'|url }}" ></script>    
+    <script src="{{ '/static/js/bootstrap.bundle.min.js'|url }}" ></script>
 
   </footer>
 </body>
