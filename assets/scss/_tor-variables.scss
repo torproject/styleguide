@@ -23,12 +23,12 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 
 $primary:       $purple !default;
-$secondary:     $gray-600 !default;
+$secondary:     $gray-800 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-200 !default;
+$light:         $gray-100 !default;
 $dark:          $purple-dark !default;
 
 $navbar-dark-color:                 $white !default;
@@ -51,3 +51,6 @@ $font-family-monospace: "Source Code Pro", Menlo, Monaco, Consolas, "Liberation 
 $font-family-base:      $font-family-sans !default;
 
 $mark-bg:               $bd-purple-light;
+
+// Tables
+$table-accent-bg: $bd-purple-light;

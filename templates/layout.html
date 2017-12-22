@@ -25,7 +25,7 @@
   <div class="page">
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-	<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+	<div class="col-12 col-md-2 col-xl-1 bd-sidebar">
           <nav id="bd-docs-nav" class="collapse bd-links">
             <ul class="nav nav-pills flex-column">
               {% for id, item in bag('menu').items() %}
@@ -45,18 +45,18 @@
 	</div>
 
         {% block body %}{% endblock %}
-	
+
       </div>
     </div>
-  
-   
+
+
   </div>
   <footer>
     <script src="{{ '/static/js/jquery-3.2.1.min.js'|url }}" ></script>
     <script src="{{ '/static/js/popper.min.js'|url }}" ></script>
     <script src="{{ '/static/js/util.min.js'|url }}" ></script>  
-    <script src="{{ '/static/js/scrollspy.min.js'|url }}" ></script>    
     <script src="{{ '/static/js/bootstrap.bundle.min.js'|url }}" ></script>
+    <script src="{{ '/static/js/scrollspy.min.js'|url }}" ></script>
 
   </footer>
 </body>
