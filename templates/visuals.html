@@ -2,7 +2,7 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 
-<nav id="components-nav" class="nav flex-column d-none d-xl-block col-xl-2 bd-toc">
+<nav id="visuals-nav" class="nav flex-column d-none d-xl-block col-xl-2 bd-toc">
   <ul class="nav nav-pills flex-column sticky-top">
     {% for id, item in bag('visuals').items() %}
       <li class="nav-item">
@@ -12,14 +12,14 @@
   </ul>
 </nav>
 
-<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content content-scroll sticky-top" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 content-scroll" data-spy="scroll" data-target="#visuals-nav" data-offset="0">
   <h1>{{ this.title }}</h1>
 
   {{ this.body }}
 
 
   <div class="page-header mb-4 mt-5">
-    <h3>Colors</h3>
+    <h3 id="colors">Colors</h3>
     <p class="text-muted">Some Description</p>
   </div>
   <div class="row">
@@ -50,7 +50,7 @@
   </div>
 
   <div class="page-header mb-4 mt-5">
-    <h3>Grid</h3>
+    <h3 id="grid">Grid</h3>
     <p class="text-muted">Some Description about grids</p>
   </div>
   <div class="bg-light p-5">
@@ -96,7 +96,7 @@
   </div>
 
   <div class="page-header mb-4 mt-5">
-    <h3>Typography</h3>
+    <h3 id="typography">Typography</h3>
     <p class="text-muted">Some Description about headings and body text.</p>
   </div>
   <div class="row">
