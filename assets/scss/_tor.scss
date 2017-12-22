@@ -25,6 +25,24 @@
 /*
  * Typography
  */
+
+ @font-face {
+   font-family: Source Sans Pro;
+   src: url('fonts/SourceSansPro/SourceSansPro-Regular.ttf');
+ }
+ @font-face {
+    font-family: Source Serif Pro;
+    src: url('fonts/SourceSerifPro/SourceSerifPro-Regular.ttf');
+ }
+ @font-face {
+    font-family: Source Code Pro;
+    src: url('fonts/SourceSerifPro/SourceSerif-Regular.ttf');
+ }
+
+ .font-family-serif {
+   font-family: $font-family-serif !important;
+ }
+
 h6 {
   text-transform: uppercase;
   font-weight: bold;
@@ -35,12 +53,6 @@ p {
   color: $gray-900;
   line-height: 2rem;
 }
-.font-family-serif {
-  font-family: $font-family-serif !important;
-}
-.font-weight-light {
-  font-family: Source Light Pro !important;
-}
 .display-5 {
   font-size: 1.5em;
 }
@@ -49,6 +61,24 @@ p {
 }
 mark,.mark {
   color: $purple;
+}
+
+.bd-sidebar{
+  border: 0 !important;
+}
+.bd-toc{
+  order: 0 !important;
+}
+#components-nav .nav-pills .nav-link,
+#visuals-nav .nav-pills .nav-link{
+  border-radius: 0;
+}
+#components-nav .nav-pills .nav-link.active,
+#visuals-nav .nav-pills .nav-link.active{
+  background-color: $white;
+  color: $purple;
+  border-left: 2px solid $purple;
+  font-weight: bold;
 }
 
 /*
@@ -144,6 +174,13 @@ mark,.mark {
 }
 
 //
+// Tables
+//
+.table-striped td{
+  border: 0 !important;
+}
+
+//
 // Callouts
 //
 .bd-callout {
@@ -182,6 +219,19 @@ mark,.mark {
 .bd-callout-info { @include bs-callout-variant($bd-info); }
 .bd-callout-warning { @include bs-callout-variant($bd-warning); }
 .bd-callout-danger { @include bs-callout-variant($bd-danger); }
+
+// Styleguide Nav Update
+
+// All levels of nav
+.bd-sidebar .nav > li > a {
+  font-size: 100%;
+  color: rgba(0, 0, 0, .85);
+}
+
+.bd-sidebar .nav > li > a:hover {
+  color: $purple !important;
+  text-decoration: none;
+}
 
 // stylelint-disable declaration-block-single-line-max-declarations
 

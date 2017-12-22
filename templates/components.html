@@ -2,7 +2,7 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 
-<nav id="components-nav" class="nav flex-column d-none d-xl-block col-xl-2 bd-toc">
+<nav id="components-nav" class="nav flex-column d-none d-xl-block col-xl-1 bd-toc border">
   <ul class="nav nav-pills flex-column sticky-top">
     {% for id, item in bag('components').items() %}
       <li class="nav-item">
@@ -13,32 +13,51 @@
 </nav>
 
 <main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 content-scroll" data-spy="scroll" data-target="#components-nav" data-offset="0">
-  <h1>{{ this.title }}</h1>
+  <!--h1 class="mt-5">{{ this.title }}</h1-->
 
   {{ this.body }}
+
+
   <h1 id="buttons"> </h1>
   <div class="page-header mb-4 mt-5">
     <h3>Buttons</h3>
     <p class="text-muted">Some Description about buttons.</p>
   </div>
-  <div class="row bg-light p-5 col-sm-4">
+  <div class="row bg-light p-5">
     <div class="col-sm-4 p-1">
-      <button type="button" class="btn btn-lg btn-default mr-2">Default</button>
       <button type="button" class="btn btn-lg btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-lg btn-outline-primary mr-2">Ghost</button>
       <button type="button" class="btn btn-lg btn-link mr-2">Link</button>
     </div>
     <div class="col-sm-4 p-1">
-      <button type="button" class="btn btn-default mr-2">Default</button>
       <button type="button" class="btn btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-outline-primary mr-2">Ghost</button>
       <button type="button" class="btn btn-link mr-2">Link</button>
     </div>
     <div class="col-sm-4 p-1">
-      <button type="button" class="btn btn-sm btn-default mr-2">Default</button>
       <button type="button" class="btn btn-sm btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-sm btn-outline-primary mr-2">Ghost</button>
       <button type="button" class="btn btn-sm btn-link mr-2">Link</button>
     </div>
   </div>
-  
+
+  <h1 id="badges"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Badges</h3>
+    <p class="text-muted">Some Description about badges.</p>
+  </div>
+  <div class="row p-5 bg-light">
+    <div class="col-12">
+      <h2>Example heading <span class="badge badge-primary">New</span></h2>
+    </div>
+    <div class="col-12">
+      <h4 class="pt-4">Example heading <span class="badge badge-secondary">New</span></h4>
+    </div>
+    <div class="col-12">
+      <h6 class="pt-4">Example heading <span class="badge-pill badge-primary">New</span></h6>
+    </div>
+  </div>
+
   <h1 id="forms"> </h1>
   <div class="page-header mb-4 mt-5">
     <h3>Forms</h3>
@@ -65,82 +84,73 @@
     </form>
   </div>
 
-  <h1 id="badges"> </h1>
-  <div class="page-header mb-4 mt-5">
-    <h3>Badges</h3>
-    <p class="text-muted">Some Description about badges.</p>
-  </div>
-  <div class="p-5 bg-light">
-    <h2>Example heading <span class="badge badge-primary">New</span></h2>
-    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-    <h6>Example heading <span class="badge-pill badge-primary">New</span></h6>
-  </div>
-
   <div class="page-header mb-4 mt-5">
     <h3 id="tables">Tables</h3>
     <p class="text-muted">Some Description about tables.</p>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-12">
+      <p class="text-black small text-muted">Default</p>
       <table class="table">
         <thead>
           <tr>
 	    <th>#</th>
-	    <th>First Name</th>
-	    <th>Last Name</th>
-	    <th>Username</th>
+	    <th>Dates</th>
+	    <th>Protocol</th>
+	    <th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
 	    <td>1</td>
-	    <td>Mark</td>
-	    <td>Otto</td>
-	    <td>@mdo</td>
+	    <td>2017-12-05 to 2017-12-15</td>
+	    <td>Zimbabwe</td>
+	    <td>Internet outage in Zimbabwe. <a href="#">Source</a></td>
           </tr>
           <tr>
 	    <td>2</td>
-	    <td>Jacob</td>
-	    <td>Thornton</td>
-	    <td>@fat</td>
+	    <td>2017-11-25 to 2017-11-27</td>
+	    <td>Pakistan</td>
+	    <td>Social media block in Pakistan. <a href="#">News</a></td>
           </tr>
           <tr>
 	    <td>3</td>
-	    <td>Larry</td>
-	    <td>the Bird</td>
-	    <td>@twitter</td>
+	    <td>2017-11-01</td>
+	    <td>Russia</td>
+	    <td>Ban on VPNs and anonymizers takes effect in Russia.</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="col-md-6">
+    <div class="col-12">
+      <p class="text-black small text-muted">Striped</p>
       <table class="table table-striped">
         <thead>
           <tr>
 	    <th>#</th>
-	    <th>First Name</th>
-	    <th>Last Name</th>
-	    <th>Username</th>
+	    <th>Dates</th>
+	    <th>Protocol</th>
+	    <th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
 	    <td>1</td>
-	    <td>Mark</td>
-	    <td>Otto</td>
-	    <td>@mdo</td>
+	    <td>2017-12-05 to 2017-12-15</td>
+	    <td>Zimbabwe</td>
+	    <td>Internet outage in Zimbabwe. <a href="#">Source</a></td>
           </tr>
           <tr>
 	    <td>2</td>
-	    <td>Jacob</td>
-	    <td>Thornton</td>
-	    <td>@fat</td>
+	    <td>2017-11-25 to 2017-11-27</td>
+	    <td>Pakistan</td>
+	    <td>Social media block in Pakistan. <a href="#">News</a></td>
           </tr>
           <tr>
 	    <td>3</td>
-	    <td>Larry</td>
-	    <td>the Bird</td>
-	    <td>@twitter</td>
+	    <td>2017-11-01</td>
+	    <td>Russia</td>
+	    <td>Ban on VPNs and anonymizers takes effect in Russia.</td>
           </tr>
         </tbody>
       </table>
@@ -154,29 +164,41 @@
   </div>
   <div class="row bg-light p-5">
     <div class="col-md-6">
+      <div class="card mb-2">
+        <div class="card-body">
+          <h4 class="card-title">Tor Browser</h4>
+          <p class="card-text text-muted">Tor Browser contains everything you need to safely browse the Internet.</p>
+          <a href="#" class="btn btn-primary">Download Tor Browser</a>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h4 class="card-title">Advocacy</h4>
+          <p class="card-text text-muted">Monitor some of our public mailing lists, like tor-talk, tor-relays, tor-dev, or tbb-dev, and summarize noteworthy changes into articles for our blog and newsletter.</p>
+          <a href="#">Apply as Advocate</a>
+        </div>
+      </div>
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">Special title treatment</h4>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h4 class="card-title">Metrics Portal</h4>
+          <p class="card-text text-muted">Analytics for the Tor network, including graphs of its available bandwidth and estimated userbase.</p>
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="card">
-        <img class="card-img-top" src="/static/images/index.svg" alt="Card image cap">
+        <img class="card-img-top" src="/static/images/nodes.png" alt="Card image cap">
         <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h4 class="card-title">A few things everyone can do now</h4>
+          <p class="card-text text-muted">Numerous people contribute to the project to varying extents, but the chief architects are Nick Mathewson and Roger Dingledine.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Consider <a href="#"><mark>running a relay</mark></a> to help the Tor network grow.</li>
+          <li class="list-group-item">Take a moment to <mark>donate</mark> to support further Tor development.</li>
+          <li class="list-group-item">Help <mark>translate</mark> the documentation into <a href="#">other languages</a>.</li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="#" class="card-link">View All</a>
         </div>
       </div>
     </div>
@@ -188,9 +210,9 @@
     <h3>Pagination</h3>
     <p class="text-muted">Some Description about pagination.</p>
   </div>
-  <div class="bg-light p-5">
+  <div class="row bg-light p-5">
     <nav aria-label="...">
-      <ul class="pagination">
+      <ul class="pagination m-0">
         <li class="page-item disabled">
           <span class="page-link">Previous</span>
         </li>
@@ -213,20 +235,20 @@
     <h3 id="alerts">Alerts</h3>
     <p class="text-muted">Some Description about alerts.</p>
   </div>
-  <div class="p-5 bg-light">
-    <div class="alert alert-primary" role="alert">
+  <div class="row p-5 bg-light">
+    <div class="col-12 alert alert-primary" role="alert">
       This is a primary alert—check it out!
     </div>
-    <div class="alert alert-secondary" role="alert">
+    <div class="col-12 alert alert-secondary" role="alert">
       This is a secondary alert—check it out!
     </div>
-    <div class="alert alert-success" role="alert">
+    <div class="col-12 alert alert-success" role="alert">
       This is a success alert—check it out!
     </div>
-    <div class="alert alert-danger" role="alert">
+    <div class="col-12 alert alert-danger" role="alert">
       This is a danger alert—check it out!
     </div>
-    <div class="alert alert-warning" role="alert">
+    <div class="col-12 alert alert-warning" role="alert">
       This is a warning alert—check it out!
     </div>
   </div>
@@ -236,19 +258,19 @@
     <h3>Scrollspy</h3>
     <p class="text-muted">Some Description about scrollspy.</p>
   </div>
-  <div class="p-5 bg-light">
+  <div class="row p-5 bg-light">
     <div class="bd-example">
       <div class="row">
-	<div class="col-4">
-	  <div id="list-example" class="list-group">
-            <a class="list-group-item list-group-item-action active" href="#list-item-1">Item 1</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-	  </div>
-	</div>
-	<div class="col-8">
-	  <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+      	<div class="col-4">
+      	  <div id="list-example" class="list-group">
+                  <a class="list-group-item list-group-item-action active" href="#list-item-1">Item 1</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+      	  </div>
+      	</div>
+      	<div class="col-8">
+      	  <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
             <h4 id="list-item-1" style="">Item 1</h4>
             <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
             <h4 id="list-item-2" style="">Item 2</h4>
@@ -257,15 +279,15 @@
             <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
             <h4 id="list-item-4" style="">Item 4</h4>
             <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-	  </div>
-	</div>
+          </div>
+      	</div>
       </div>
     </div>
   </div>
 
-  
+
   {% include 'footer.html' %}
 
-  
+
 </main>
 {% endblock %}
