@@ -2,4 +2,7 @@ _model: page
 ---
 title: Getting Started
 ---
-body: how to use it, install bootstrap, ready to download tor-css
+body:
+
+---
+_template: getting-started.html

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 content-scroll" data-spy="scroll" data-target="#components-nav" data-offset="0">
+  <!--h1 class="mt-5">{{ this.title }}</h1-->
+
+  {{ this.body }}
+  <div class="row">
+    <div class="col-12">
+      <div class="page-header mb-4 mt-5">
+        <h3>Getting Started</h3>
+        <p class="text-muted">We are making Tor usable for everyone.</p>
+      </div>
+      <p>Intro about Bootstrap, why we are using it, how to reach bootstrap documentation
+      </p>
+      <p class="text-black small text-muted">How to use it</p>
+      <p class="purple">
+      Details about our tor.css + tor-variables.css. How to download it and install it. A note about saas
+      </p>
+      <p class="text-black small text-muted">Lektor?</p>
+      <p class="text-muted">
+      Something about Lektor?
+      </p>
+      <div class="border p-5 mb-3">
+        <h6>Use The Tor Project Styleguide</h6>
+        <p class="m-0">This package includes .css and .css files</p>
+        <a class="btn btn-lg btn-link p-0" title="Tor Media Repo" href="https://oniongit.eu/infra/styleguide" target="_blank">Visit Repo</a>
+      </div>
+      <div>
+        <p class="m-0">Tor UX Team</p>
+        <button class="btn btn-link p-0">ux@lists.torproject.org</button>
+      </div>
+    </div>
+  </div>
+
+  {% include 'footer.html' %}
+
+
+</main>
+{% endblock %}

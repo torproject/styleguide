@@ -190,6 +190,9 @@ mark, .mark {
   color: #7D4698 !important;
   text-decoration: none; }
 
+#bd-docs-nav {
+  padding-top: 2rem; }
+
 .hll {
   background-color: #ffc; }
 
