@@ -6,7 +6,7 @@ subtitle: We are making Tor usable for everyone.
 ---
 body:
 
-The Tor Style guide is implemeting based on Bootstrap.
+The Tor Style guide is based on Bootstrap.
 
 [Bootstrap](https://getbootstrap.com/) is an open source toolkit for developing with HTML, CSS, and JS. We are currently implementing [v4.0.0-beta.2](https://github.com/twbs/bootstrap/releases/tag/v4.0.0-beta.2).
 
