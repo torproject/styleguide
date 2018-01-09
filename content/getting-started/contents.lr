@@ -6,15 +6,13 @@ subtitle: We are making Tor usable for everyone.
 ---
 body:
 
-The Tor Style guide is based on Bootstrap.
-
-[Bootstrap](https://getbootstrap.com/) is an open source toolkit for developing with HTML, CSS, and JS. We are currently implementing [v4.0.0-beta.2](https://github.com/twbs/bootstrap/releases/tag/v4.0.0-beta.2).
+The Tor Styleguide is based on [Bootstrap](https://getbootstrap.com/), an open source toolkit for developing with HTML, CSS, and JS. We are currently implementing [v4.0.0-beta.2](https://github.com/twbs/bootstrap/releases/tag/v4.0.0-beta.2).
 
 
-To use the Tor styleguide you can download our css style and import it in your project or clone this repository and use our SASS files. [SASS](http://sass-lang.com/) is a CSS extension language. Bootstrap and this styleguide are based on [v3.5.4](http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#3_5_4__15_December_2017_).
+To use the Tor styleguide you can download our [css style](https://oniongit.eu/infra/styleguide/tree/master/assets/static) and import it in your project. Alternatively, you can also clone this repository and use our SASS files. [SASS](http://sass-lang.com/) is a CSS extension language. Bootstrap and this styleguide are based on [v3.5.4](http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#3_5_4__15_December_2017_).
 
 <p class="purple">
-If you want to use SASS you can download the complete archive for the style guide. The scss folder contains all the sass files. Since we use bootstrap, we only add two modified files. These are _tor_variables.scss and _tor.scss. These are imported in the main bootstrap files and compiled into the final css.
+If you want to use SASS you can download the complete archive for the [styleguide](https://oniongit.eu/infra/styleguide). The [scss folder under assets](https://oniongit.eu/infra/styleguide/tree/master/assets/scss) contains all the sass files. Since we use bootstrap, we only add a few styles without modifying bootstrap core or definying new elements whenever possible. These are [_tor_variables.scss](https://oniongit.eu/infra/styleguide/blob/master/assets/scss/_tor-variables.scss) and [_tor.scss](https://oniongit.eu/infra/styleguide/blob/master/assets/scss/_tor.scss). These are imported in the main bootstrap scss file and compiled into the final css.
 </p>
 
 This styleguide has been built using [Lektor](https://www.getlektor.com/). Lektor is a static content management system. You can build this yourself by [installing Lektor](https://www.getlektor.com/downloads/).
