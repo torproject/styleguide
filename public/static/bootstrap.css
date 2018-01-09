@@ -19,8 +19,7 @@
   background-image: none !important; }
 
 .content-scroll {
-  position: relative;
-  overflow-y: scroll; }
+  position: relative; }
 
 /*
  * Typography

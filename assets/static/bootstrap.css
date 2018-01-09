@@ -33,6 +33,105 @@
 @font-face {
   font-family: Source Code Pro;
   src: url("fonts/SourceSerifPro/SourceSerif-Regular.ttf"); }
+@font-face {
+  font-family: "tor-icons";
+  src: url("fonts/TorIcons/tor-icons.eot?#iefix") format("embedded-opentype"), url("fonts/TorIcons/tor-icons.woff2") format("woff2"), url("fonsts/TorIcons/tor-icons.woff") format("woff"), url("fonts/TorIcons/tor-icons.ttf") format("truetype"), url("fonts/TorIcons/tor-icons.svg?#tor-icons") format("svg"); }
+.ti:before {
+  font-family: tor-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: top; }
+
+.ti-authority:before {
+  content: "\f101"; }
+
+.ti-badexit:before {
+  content: "\f102"; }
+
+.ti-bridge:before {
+  content: "\f103"; }
+
+.ti-country:before {
+  content: "\f104"; }
+
+.ti-directory:before {
+  content: "\f105"; }
+
+.ti-exit:before {
+  content: "\f106"; }
+
+.ti-fallbackdir:before {
+  content: "\f107"; }
+
+.ti-fast:before {
+  content: "\f108"; }
+
+.ti-fingerprint:before {
+  content: "\f109"; }
+
+.ti-guard:before {
+  content: "\f10a"; }
+
+.ti-hibernating:before {
+  content: "\f10b"; }
+
+.ti-hsdir:before {
+  content: "\f10c"; }
+
+.ti-ipv4:before {
+  content: "\f10d"; }
+
+.ti-ipv6:before {
+  content: "\f10e"; }
+
+.ti-ipv6exit:before {
+  content: "\f10f"; }
+
+.ti-noedconsensus:before {
+  content: "\f110"; }
+
+.ti-notrecommended:before {
+  content: "\f111"; }
+
+.ti-onion-alt:before {
+  content: "\f112"; }
+
+.ti-onion:before {
+  content: "\f113"; }
+
+.ti-reachableipv4:before {
+  content: "\f114"; }
+
+.ti-reachableipv6:before {
+  content: "\f115"; }
+
+.ti-relay:before {
+  content: "\f116"; }
+
+.ti-running:before {
+  content: "\f117"; }
+
+.ti-stable:before {
+  content: "\f118"; }
+
+.ti-tshirt:before {
+  content: "\f119"; }
+
+.ti-unmeasured:before {
+  content: "\f11a"; }
+
+.ti-unreachableipv4:before {
+  content: "\f11b"; }
+
+.ti-unreachableipv6:before {
+  content: "\f11c"; }
+
+.ti-v2dir:before {
+  content: "\f11d"; }
+
+.ti-valid:before {
+  content: "\f11e"; }
+
 .font-family-serif {
   font-family: "Source Serif Pro", -apple-system, "Georgia", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
 

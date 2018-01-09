@@ -15,11 +15,14 @@ To use the Tor styleguide you can download our [css style](https://oniongit.eu/i
 If you want to use SASS you can download the complete archive for the [styleguide](https://oniongit.eu/infra/styleguide). The [scss folder under assets](https://oniongit.eu/infra/styleguide/tree/master/assets/scss) contains all the sass files. Since we use bootstrap, we only add a few styles without modifying bootstrap core or definying new elements whenever possible. These are [_tor_variables.scss](https://oniongit.eu/infra/styleguide/blob/master/assets/scss/_tor-variables.scss) and [_tor.scss](https://oniongit.eu/infra/styleguide/blob/master/assets/scss/_tor.scss). These are imported in the main bootstrap scss file and compiled into the final css.
 </p>
 
+
+Bootstrap contains a few JavaScript libraries for extra interaction with the DOM. We use these libraries but do not add extra JavaScript. You might notice that if you run Tor browser with *high security mode*, JavaScript is disabled by default. This styleguide is designed to also work for users using Tor browse in *high security mode*, so that only few elements are affected if you disabled JavaScript.
+
 This styleguide has been built using [Lektor](https://www.getlektor.com/). Lektor is a static content management system. You can build this yourself by [installing Lektor](https://www.getlektor.com/downloads/).
 
 <div class="border p-5 mb-3">
 <h6>Use The Tor Project Styleguide</h6>
-<p class="m-0">This package includes .css and .css files</p>
+<p class="m-0">This package includes .scss and .css files</p>
 <a class="btn btn-lg btn-link p-0" title="Tor Media Repo" href="https://oniongit.eu/infra/styleguide" target="_blank">Visit Repo</a>
 </div>
 
