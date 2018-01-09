@@ -28,16 +28,22 @@
   font-family: Source Sans Pro;
   src: url("fonts/SourceSansPro/SourceSansPro-Regular.ttf"); }
 @font-face {
+  font-family: Source Sans Pro Light;
+  src: url("fonts/SourceSansPro/SourceSansPro-Light.ttf"); }
+@font-face {
+  font-family: Source Sans Pro Bold;
+  src: url("fonts/SourceSansPro/SourceSansPro-Bold.ttf"); }
+@font-face {
   font-family: Source Serif Pro;
   src: url("fonts/SourceSerifPro/SourceSerifPro-Regular.ttf"); }
 @font-face {
   font-family: Source Code Pro;
-  src: url("fonts/SourceSerifPro/SourceSerif-Regular.ttf"); }
+  src: url("fonts/SourceCodePro/SourceCodePro-Regular.ttf"); }
 @font-face {
-  font-family: "tor-icons";
+  font-family: Tor Icons;
   src: url("fonts/TorIcons/tor-icons.eot?#iefix") format("embedded-opentype"), url("fonts/TorIcons/tor-icons.woff2") format("woff2"), url("fonsts/TorIcons/tor-icons.woff") format("woff"), url("fonts/TorIcons/tor-icons.ttf") format("truetype"), url("fonts/TorIcons/tor-icons.svg?#tor-icons") format("svg"); }
 .ti:before {
-  font-family: tor-icons !important;
+  font-family: Tor Icons !important;
   font-style: normal;
   font-weight: normal !important;
   vertical-align: top; }
@@ -134,6 +140,12 @@
 
 .font-family-serif {
   font-family: "Source Serif Pro", -apple-system, "Georgia", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
+
+.font-weight-light {
+  font-family: Source Sans Pro Light; }
+
+.font-weight-bold {
+  font-family: Source Sans Pro Bold; }
 
 h6 {
   text-transform: uppercase;
