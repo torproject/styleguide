@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/bootstrap.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/bootstrap.css'|asseturl }}">
 <title>{% block title %}Welcome{% endblock %} — styleguide</title>
 <body>
   <header>
@@ -17,7 +17,7 @@
             <li class="nav-item"></li>
           </ul>
           <div class="mt-2 mt-md-0">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Download Tor Browser</button>
+            <a class="btn btn-outline-light my-2 my-sm-0" href="https://www.torproject.org/download/download-easy.html.en">Download Tor Browser</a>
           </div>
         </div>
       </nav>
@@ -29,16 +29,7 @@
           <nav id="bd-docs-nav" class="collapse bd-links">
             <ul class="nav nav-pills flex-column">
               {% for id, item in bag('menu').items() %}
-              <li{% if this.is_child_of(item.path) %} class="nav-item toc-entry toc-h2 active" {% else %} class="toc-entry toc-h2"{% endif %}><a class="nav-link" href="{{ item.path|url }}">{{ item.label }}</a></li>
-	      {% set docs = site.get(item.path) %}
-              {% for child in docs.children recursive %}
-              <li{% if this._path == child._path %} class="toc-entry toc-h4 active" {% else %} class="toc-entry toc-h4"{% endif
-                    %}>{{ get_link(child) }}
-                {% if this.is_child_of(child) %}
-                <ul>{{ loop(child.children) }}</ul>
-                {% endif %}
-		{% endfor %}
-		{% endfor %}
+                <li{% if this.is_child_of(item.path) %} class="nav-item toc-entry toc-h2 active" {% else %} class="toc-entry toc-h2"{% endif %}><a class="nav-link" href="{{ item.path|url }}">{{ item.label }}</a></li>	          {% endfor %}
             </ul>
 
           </nav>
@@ -52,10 +43,10 @@
 
   </div>
   <footer>
-    <script src="{{ '/static/js/jquery-3.2.1.min.js'|url }}" ></script>
-    <script src="{{ '/static/js/popper.min.js'|url }}" ></script>
-    <script src="{{ '/static/js/bootstrap.bundle.min.js'|url }}" ></script>
-    <script src="{{ '/static/js/scrollspy.min.js'|url }}" ></script>
+    <script src="{{ '/static/js/jquery-3.2.1.min.js'|asseturl }}" ></script>
+    <script src="{{ '/static/js/popper.min.js'|asseturl }}" ></script>
+    <script src="{{ '/static/js/bootstrap.bundle.min.js'|asseturl }}" ></script>
+    <script src="{{ '/static/js/scrollspy.min.js'|asseturl }}" ></script>
 
   </footer>
 </body>

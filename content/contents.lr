@@ -1,6 +1,22 @@
-title: Welcome to styleguide!
+title: Tor Styleguide
 ---
 body:
 
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages.
+The visual identity of software is an integral part of its user experience. Correctly using a consistent and attractive style is important to The Tor Project because <mark> it helps users build trust in the work we do.</mark>
+
+We hope that this guide will help you create materials and answer potential questions you might have about the use of the Tor “brand”.
+That said, there is a reason we call this a style guide and not a set of style rules. We expect there to be situations that this guide does not cover, or where you find yourself needing needing to stretch the standards a bit.
+
+<p class="text-black small text-muted">Contact</p>
+<p class="purple">
+Please reach out to the UX team when you encounter such cases. We will work with you to help you find a solution for your design problem that is consistent with the guide. Your feedback will also help us expand and refine the guide to help it better meet the Tor Community’s needs.
+For any questions and inquiries you might have related to this styleguide, we encourage you to reach out to the UX team. We will try to help you find good answers!
+</p>
+<p class="text-black small text-muted">Conventions</p>
+<p class="text-muted">
+This guide aims to show by doing. The main body of each page contains examples of graphic elements that are (and, in some cases, are not) confor- mant with the style being described. The column on the le  specifies the details of each style and o ers guidance on when and how to use it.
+</p>
+
+
+---
+_template: about.html

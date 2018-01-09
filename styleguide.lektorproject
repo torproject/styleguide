@@ -1,2 +1,4 @@
 [project]
 name = styleguide
+url = https://styleguide.torproject.org/
+url_style = absolute

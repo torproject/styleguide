@@ -2,8 +2,6 @@ _model: page
 ---
 title: Getting Started
 ---
-subtitle: We are making Tor usable for everyone.
----
 body:
 
 The Tor Styleguide is based on [Bootstrap](https://getbootstrap.com/), an open source toolkit for developing with HTML, CSS, and JS. We are currently implementing [v4.0.0-beta.2](https://github.com/twbs/bootstrap/releases/tag/v4.0.0-beta.2).
@@ -16,7 +14,7 @@ If you want to use SASS you can download the complete archive for the [styleguid
 </p>
 
 
-Bootstrap contains a few JavaScript libraries for extra interaction with the DOM. We use these libraries but do not add extra JavaScript. You might notice that if you run Tor browser with *high security mode*, JavaScript is disabled by default. This styleguide is designed to also work for users using Tor browse in *high security mode*, so that only few elements are affected if you disabled JavaScript.
+Bootstrap contains a few JavaScript libraries for extra interaction with the DOM. We use these libraries but do not add extra JavaScript. You might notice that if you run Tor browser with *high security mode*, JavaScript is disabled by default. <mark>This styleguide is designed to also work for users using Tor browse in *high security mode*, so that only few elements are affected if you disable JavaScript.</mark>
 
 This styleguide has been built using [Lektor](https://www.getlektor.com/). Lektor is a static content management system. You can build this yourself by [installing Lektor](https://www.getlektor.com/downloads/).
 
