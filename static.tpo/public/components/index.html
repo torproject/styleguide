@@ -1,0 +1,373 @@
+
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/bootstrap.css?h=52501495">
+<title>Components — styleguide</title>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="#">The Tor Project <span>Styleguide</span></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"></li>
+          </ul>
+          <div class="mt-2 mt-md-0">
+            <a class="btn btn-outline-light my-2 my-sm-0" href="https://www.torproject.org/download/download-easy.html.en">Download Tor Browser</a>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <div class="page">
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+	<div class="col-12 col-md-2 col-xl-1 bd-sidebar">
+          <nav id="bd-docs-nav" class="collapse bd-links">
+            <ul class="nav nav-pills flex-column">
+              
+                <li class="nav-item toc-entry toc-h2 active" ><a class="nav-link" href="/">About</a></li>	          
+                <li class="toc-entry toc-h2"><a class="nav-link" href="/getting-started/">Getting Started</a></li>	          
+                <li class="toc-entry toc-h2"><a class="nav-link" href="/visuals/">Visuals</a></li>	          
+                <li class="nav-item toc-entry toc-h2 active" ><a class="nav-link" href="/components/">Components</a></li>	          
+            </ul>
+
+          </nav>
+	</div>
+
+        
+
+<nav id="components-nav" class="nav flex-column d-none d-xl-block col-xl-1 bd-toc border">
+  <ul class="nav nav-pills flex-column sticky-top">
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#buttons">Buttons</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#forms">Forms</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#badges">Badges</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#tables">Tables</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#cards">Cards</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspy">Scrollspy</a>
+      </li>
+    
+  </ul>
+</nav>
+
+<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5" data-offset="0">
+  <!--h1 class="mt-5">Components</h1-->
+
+  
+
+  <h1 id="buttons"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Buttons</h3>
+    <!--p class="text-muted">Some Description about buttons.</p-->
+  </div>
+  <div class="row bg-light p-5">
+    <div class="col-sm-4 p-1">
+      <p class="text-black small text-muted m-0 pb-2">Primary</p>
+      <button type="button" class="btn btn-lg btn-primary mr-2">Download Tor Browser</button>
+      <p class="text-black small text-muted m-0 pt-2 pb-2">Ghost</p>
+      <button type="button" class="btn btn-lg btn-outline-primary mr-2">How to Contribute</button>
+      <p class="text-black small text-muted m-0 pt-2">Link</p>
+      <button type="button" class="btn btn-lg btn-link mr-2">Learn more</button>
+    </div>
+    <div class="col-sm-4 p-1">
+      <p class="text-black small text-muted m-0 pt-2 pb-2">Medium</p>
+      <button type="button" class="btn btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-outline-primary mr-2">Ghost</button>
+      <button type="button" class="btn btn-link mr-2">Link</button>
+      <p class="text-black small text-muted m-0 pt-2 pb-2">Small</p>
+      <button type="button" class="btn btn-sm btn-primary mr-2">Primary</button>
+      <button type="button" class="btn btn-sm btn-outline-primary mr-2">Ghost</button>
+      <button type="button" class="btn btn-sm btn-link mr-2">Link</button>
+    </div>
+  </div>
+
+  <h1 id="badges"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Badges</h3>
+    <!--p class="text-muted">Some Description about badges.</p-->
+  </div>
+  <div class="row p-5 bg-light">
+    <div class="col-12">
+      <h2>Example heading <span class="badge badge-primary">New</span></h2>
+    </div>
+    <div class="col-12">
+      <h4 class="pt-4">Example heading <span class="badge badge-secondary">New</span></h4>
+    </div>
+    <div class="col-12">
+      <h6 class="pt-4">Example heading <span class="badge-pill badge-primary">New</span></h6>
+    </div>
+  </div>
+
+  <h1 id="forms"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Forms</h3>
+    <!--p class="text-muted">Some Description about Forms.</p-->
+  </div>
+  <div class="row">
+    <form class="bg-light p-5 col-sm-4">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">
+          Check me out
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="tables">Tables</h3>
+    <!--p class="text-muted">Some Description about tables.</p-->
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="text-black small text-muted">Default</p>
+      <table class="table">
+        <thead>
+          <tr>
+	    <th>#</th>
+	    <th>Dates</th>
+	    <th>Protocol</th>
+	    <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+	    <td>1</td>
+	    <td>2017-12-05 to 2017-12-15</td>
+	    <td>Zimbabwe</td>
+	    <td>Internet outage in Zimbabwe. <a href="#">Source</a></td>
+          </tr>
+          <tr>
+	    <td>2</td>
+	    <td>2017-11-25 to 2017-11-27</td>
+	    <td>Pakistan</td>
+	    <td>Social media block in Pakistan. <a href="#">News</a></td>
+          </tr>
+          <tr>
+	    <td>3</td>
+	    <td>2017-11-01</td>
+	    <td>Russia</td>
+	    <td>Ban on VPNs and anonymizers takes effect in Russia.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-12">
+      <p class="text-black small text-muted">Striped</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+	    <th>#</th>
+	    <th>Dates</th>
+	    <th>Protocol</th>
+	    <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+	    <td>1</td>
+	    <td>2017-12-05 to 2017-12-15</td>
+	    <td>Zimbabwe</td>
+	    <td>Internet outage in Zimbabwe. <a href="#">Source</a></td>
+          </tr>
+          <tr>
+	    <td>2</td>
+	    <td>2017-11-25 to 2017-11-27</td>
+	    <td>Pakistan</td>
+	    <td>Social media block in Pakistan. <a href="#">News</a></td>
+          </tr>
+          <tr>
+	    <td>3</td>
+	    <td>2017-11-01</td>
+	    <td>Russia</td>
+	    <td>Ban on VPNs and anonymizers takes effect in Russia.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 id="cards"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Cards</h3>
+    <!--p class="text-muted">Some Description about cards.</p-->
+  </div>
+  <div class="row bg-light p-5">
+    <div class="col-md-6">
+      <div class="card mb-2">
+        <div class="card-body">
+          <h4 class="card-title">Tor Browser</h4>
+          <p class="card-text text-muted">Tor Browser contains everything you need to safely browse the Internet.</p>
+          <a href="#" class="btn btn-primary">Download Tor Browser</a>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h4 class="card-title">Advocacy</h4>
+          <p class="card-text text-muted">Monitor some of our public mailing lists, like tor-talk, tor-relays, tor-dev, or tbb-dev, and summarize noteworthy changes into articles for our blog and newsletter.</p>
+          <a href="#">Apply as Advocate</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Metrics Portal</h4>
+          <p class="card-text text-muted">Analytics for the Tor network, including graphs of its available bandwidth and estimated userbase.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img class="card-img-top" src="/static/images/nodes.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">A few things everyone can do now</h4>
+          <p class="card-text text-muted">Numerous people contribute to the project to varying extents, but the chief architects are Nick Mathewson and Roger Dingledine.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Consider <a href="#"><mark>running a relay</mark></a> to help the Tor network grow.</li>
+          <li class="list-group-item">Take a moment to <mark>donate</mark> to support further Tor development.</li>
+          <li class="list-group-item">Help <mark>translate</mark> the documentation into <a href="#">other languages</a>.</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">View All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h1 id="pagination"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Pagination</h3>
+    <!--p class="text-muted">Some Description about pagination.</p-->
+  </div>
+  <div class="row bg-light p-5">
+    <nav aria-label="...">
+      <ul class="pagination m-0">
+        <li class="page-item disabled">
+          <span class="page-link">Previous</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+          <span class="page-link">
+	    2
+	    <span class="sr-only">(current)</span>
+          </span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="page-header mb-4 mt-5">
+    <h3 id="alerts">Alerts</h3>
+    <p class="text-muted">Some Description about alerts.</p>
+  </div>
+  <div class="row p-5 bg-light">
+    <div class="col-12 alert alert-primary" role="alert">
+      This is a primary alert—check it out!
+    </div>
+    <div class="col-12 alert alert-secondary" role="alert">
+      This is a secondary alert—check it out!
+    </div>
+    <div class="col-12 alert alert-success" role="alert">
+      This is a success alert—check it out!
+    </div>
+    <div class="col-12 alert alert-danger" role="alert">
+      This is a danger alert—check it out!
+    </div>
+    <div class="col-12 alert alert-warning" role="alert">
+      This is a warning alert—check it out!
+    </div>
+  </div>
+
+  <h1 id="scrollspy"> </h1>
+  <div class="page-header mb-4 mt-5">
+    <h3>Scrollspy</h3>
+    <!--p class="text-muted">Some Description about scrollspy.</p-->
+  </div>
+  <div class="row p-5 bg-light">
+    <div class="bd-example">
+      <div class="row">
+      	<div class="col-4">
+      	  <div id="list-example" class="list-group">
+                  <a class="list-group-item list-group-item-action active" href="#list-item-1">Install Tor Browser</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-2">Tor on Android</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-3">Other Tor</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-4">Tor Wiki</a>
+      	  </div>
+      	</div>
+      	<div class="col-8">
+      	  <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <h4 id="list-item-1" style="" class="text-muted">Install Tor Browser</h4>
+            <p>The Tor software protects you by bouncing your communications around a distributed network of relays run by volunteers all around the world: it prevents somebody watching your Internet connection from learning what sites you visit, it prevents the sites you visit from learning your physical location, and it lets you access sites which are blocked.</p>
+            <h4 id="list-item-2" style="" class="text-muted">Tor on Android</h4>
+            <p>Orbot is a free proxy app that empowers other apps to use the internet more securely. Orbot uses Tor to encrypt your Internet traffic and then hides it by bouncing through a series of computers around the world.</p>
+            <h4 id="list-item-3" style="" class="text-muted">Other To</h4>
+            <p>Tor Browser lets you use Tor on Microsoft Windows, Apple MacOS, or GNU/Linux without needing to install any software. It can run off a USB flash drive, comes with a pre-configured web browser to protect your anonymity, and is self-contained (portable).</p>
+            <h4 id="list-item-4" style="" class="text-muted">Tor Wiki</h4>
+            <p>Tor is a program you can run on your computer that helps keep you safe on the Internet. It protects you by bouncing your communications around a distributed network of relays run by volunteers all around the world: it prevents somebody watching your Internet connection from learning what sites you visit, and it prevents the sites you visit from learning your physical location. </p>
+          </div>
+      	</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+  <div class="col-12">
+    <p class="mt-5 mb-5">&copy; Copyright 2017 by Tor Project. <span class="text-muted">The Tor Project is a US 501(c)(3) non-profit organization advancing human rights and freedoms by creating and deploying free and open source anonymity and privacy technologies, supporting their unrestricted availability and use, and furthering their scientific and popular understanding.</span>
+    </p>
+  </div>
+</div>
+
+
+</main>
+
+
+      </div>
+    </div>
+
+
+  </div>
+  <footer>
+    <script src="/static/js/jquery-3.2.1.min.js?h=1055018c" ></script>
+    <script src="/static/js/popper.min.js?h=a4336719" ></script>
+    <script src="/static/js/bootstrap.bundle.min.js?h=46d1f82f" ></script>
+    <script src="/static/js/scrollspy.min.js?h=02674132" ></script>
+
+  </footer>
+</body>
+</html>
