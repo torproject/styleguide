@@ -157,12 +157,16 @@
     content: "\f11e";
 }
 
-.font-family-serif {
-  font-family: $font-family-serif !important;
+
+.display-1,
+.display-2,
+.display-3,
+.display-4{
+    font-family: Source Sans Pro Light;
 }
 
+.font-family-serif  { font-family: $font-family-serif !important;}
 .font-weight-light  { font-family: Source Sans Pro Light }
-
 .font-weight-bold   { font-family: Source Sans Pro Bold  }
 
 h6 {
