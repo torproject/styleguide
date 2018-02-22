@@ -157,18 +157,26 @@
     content: "\f11e";
 }
 
-
 .display-1,
 .display-2,
 .display-3,
-.display-4{
+.display-4 {
     font-family: Source Sans Pro Light;
 }
 
-.font-family-serif  { font-family: $font-family-serif !important;}
-.font-weight-light  { font-family: Source Sans Pro Light }
-.font-weight-bold   { font-family: Source Sans Pro Bold  }
+.font-family-serif {
+  font-family: $font-family-serif !important;
+}
+.font-weight-light {
+  font-family: Source Sans Pro Light
+}
+.font-weight-bold {
+  font-family: Source Sans Pro Bold
+ }
 
+.small, small{
+  font-size: 90%;
+}
 h6 {
   text-transform: uppercase;
   font-weight: bold;
@@ -195,6 +203,7 @@ mark,.mark {
 .bd-toc{
   order: 0 !important;
 }
+
 #components-nav .nav-pills .nav-link,
 #visuals-nav .nav-pills .nav-link{
   border-radius: 0;
