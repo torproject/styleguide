@@ -174,9 +174,10 @@
   font-family: Source Sans Pro Bold
  }
 
-.small, small{
+small, .small{
   font-size: 90%;
 }
+
 h6 {
   text-transform: uppercase;
   font-weight: bold;
@@ -193,7 +194,7 @@ p {
 .display-6 {
   font-size: 1.3em
 }
-mark,.mark {
+mark, .mark {
   color: $purple;
 }
 
