@@ -467,3 +467,16 @@ mark, .mark {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.mobile {
+    display: none !important;
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+    .mobile {
+        display: block !important;
+	padding-top: 50px;
+    }
+
+}
