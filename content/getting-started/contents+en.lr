@@ -1,0 +1,27 @@
+_model: page
+---
+title: Getting Started | Tor Styleguide
+---
+body:
+
+The Tor Styleguide is based on [Bootstrap](https://getbootstrap.com/), an open-source toolkit for developing with HTML, CSS, and JS. We are currently implementing [v4.0.0-beta.2](https://github.com/twbs/bootstrap/releases/tag/v4.0.0-beta.2).
+
+To use the Tor styleguide, you can download our [css style](https://gitweb.torproject.org/project/web/styleguide.git/tree/assets/static) and import it in your project. Alternatively, you can also clone this repository and use our SASS files. [SASS](http://sass-lang.com/) is a CSS extension language. Bootstrap and this styleguide are based on [v3.5.4](http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#3_5_4__15_December_2017_).
+
+<p class="purple"> If you want to use SASS you can download the complete archive for the <a href="https://gitweb.torproject.org/project/web/styleguide.git">styleguide</a>. The <a href="https://gitweb.torproject.org/project/web/styleguide.git">scss folder under assets</a> contains all the sass files. Since we use bootstrap, we only add a few styles without modifying bootstrap core or defining new elements whenever possible. These are <a href="https://gitweb.torproject.org/project/web/styleguide.git/tree/assets/scss/_tor-variables.scss">_tor_variables.scss</a> and <a href="https://gitweb.torproject.org/project/web/styleguide.git/tree/assets/scss/_tor.scss">_tor.scss</a>. These are imported in the main bootstrap scss file and compiled into the final css. </p>
+
+Bootstrap contains a few JavaScript libraries for extra interaction with the DOM. We use these libraries but do not add extra JavaScript. You might notice that if you run Tor Browser with high security mode, JavaScript is disabled by default.
+<mark>This styleguide is designed to also work for users using Tor Browser in high security mode</mark>, so that only few elements are affected if you disable JavaScript.
+
+This styleguide has been built using [Lektor](https://www.getlektor.com/). Lektor is a static content management system. You can build this yourself by [installing Lektor](https://www.getlektor.com/downloads/).
+
+We also provide a minimal Lektor template website that you can start modifying. This is available at this [repository](https://gitweb.torproject.org/project/web/template.git/).
+
+<div class="border p-5 mb-3">
+<h6>Use The Tor Project Styleguide</h6>
+<p class="m-0">This package includes .scss and .css files</p>
+<a class="btn btn-lg btn-link p-0" title="Tor Media Repo" href="https://oniongit.eu/infra/styleguide" target="_blank">Visit Repo</a>
+</div>
+
+---
+_template: getting-started.html
