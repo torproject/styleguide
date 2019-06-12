@@ -25,8 +25,8 @@
 // Transformation
 
 .text-lowercase  { text-transform: lowercase !important; }
-.text-uppercase  { text-transform: uppercase !important; }
-.text-capitalize { text-transform: capitalize !important; }
+.text-uppercase  { text-transform: none !important; }
+.text-capitalize { text-transform: none !important; }
 
 // Weight and italics
 

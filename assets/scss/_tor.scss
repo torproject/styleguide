@@ -179,7 +179,7 @@ small, .small{
 }
 
 h6 {
-  text-transform: uppercase;
+  text-transform: none !important;
   font-weight: bold;
   color: $purple;
 }
@@ -299,7 +299,7 @@ mark, .mark {
 // Badges
 //
 .badge{
-  text-transform: uppercase;
+  text-transform: none !important;
 }
 
 //
