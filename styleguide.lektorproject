@@ -2,3 +2,4 @@
 name = styleguide
 url = https://styleguide.torproject.org/
 url_style = relative
+locale = en

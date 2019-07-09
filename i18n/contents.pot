@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 14:00+CET\n"
+"POT-Creation-Date: 2019-07-09 14:41+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -11,3 +11,63 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: lego/templates/footer.html:9 lego/templates/footer.html:18
+#: lego/templates/navbar.html:66 templates/footer.html:9
+#: templates/footer.html:18 templates/navbar.html:66
+msgid "Download Tor Browser"
+msgstr ""
+
+#: lego/templates/footer.html:10 templates/footer.html:10
+msgid ""
+"Download Tor Browser to experience real private browsing without tracking, "
+"surveillance, or censorship."
+msgstr ""
+
+#: lego/templates/footer.html:27 templates/footer.html:27
+msgid "Our mission:"
+msgstr ""
+
+#: lego/templates/footer.html:28 templates/footer.html:28
+msgid ""
+"To advance human rights and freedoms by creating and deploying free and open "
+"source anonymity and privacy technologies, supporting their unrestricted "
+"availability and use, and furthering their scientific and popular "
+"understanding."
+msgstr ""
+
+#: lego/templates/footer.html:49 lego/templates/navbar.html:12
+#: templates/footer.html:49 templates/navbar.html:12
+msgid "Donate"
+msgstr ""
+
+#: lego/templates/footer.html:49 lego/templates/navbar.html:12
+#: templates/footer.html:49 templates/navbar.html:12
+msgid "Donate Now"
+msgstr ""
+
+#: lego/templates/footer.html:54 templates/footer.html:54
+msgid "Subscribe to our Newsletter"
+msgstr ""
+
+#: lego/templates/footer.html:55 templates/footer.html:55
+msgid "Get monthly updates and opportunities from the Tor Project:"
+msgstr ""
+
+#: lego/templates/footer.html:56 templates/footer.html:56
+msgid "Sign up"
+msgstr ""
+
+#: lego/templates/footer.html:75 templates/footer.html:75
+#, python-format
+msgid ""
+"Trademark, copyright notices, and rules for use by third parties can be "
+"found in our %(link_to_faq)s"
+msgstr ""
+
+#: lego/templates/navbar.html:15 templates/navbar.html:15
+msgid "Menu"
+msgstr ""
+
+#: lego/templates/search.html:5
+msgid "Search"
+msgstr ""
