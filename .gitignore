@@ -1,9 +1,28 @@
-scss
+node_modules
 
 .sass-cache
 .DS_Store
 
+cache
+
+.ruby-version
+
 public
+*.mo
+*.po
+contents+*.lr
+
+*.ipynb*
+
+*.egg-info
+*.pyc
+__pycache__
+
+### Lektor Temps ###
+*~*
+
+### Idea (IDE) ###
+.idea/
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -26,6 +45,8 @@ tramp
 # eshell files
 /eshell/history
 /eshell/lastdir
+
+node_modules
 
 # elpa packages
 /elpa/

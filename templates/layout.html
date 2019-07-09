@@ -1,41 +1,27 @@
 {% from "macros/links.html" import get_link %}
 <!doctype html>
 <html lang="en">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/static/bootstrap.css'|asseturl }}">
-  <link rel="stylesheet" href="{{ '/static/fonts/open-iconic/font/css/open-iconic-bootstrap.css'|asseturl }}">
-  <title>{% block title %}Tor Styleguide | The Tor Project {% endblock %}</title>
-  <body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ '/static/css/bootstrap.css'|asseturl }}">
+<link rel="stylesheet" href="{{ '/static/fonts/fontawesome/css/all.min.css'|asseturl }}" rel="stylesheet">
+<title>{% block title %} | Tor Styleguide | The Tor Project {% endblock %}</title>
+  <body class="no-gutters">
     <header>
       {% include 'navbar.html' %}
     </header>
     <div class="page">
       <div class="container-fluid">
-	<div class="row flex-xl-nowrap">
-	  <div class="col-12 col-md-2 col-xl-1 bd-sidebar">
-            <nav id="bd-docs-nav" class="collapse bd-links">
-              <ul class="nav nav-pills flex-column">
-		            {% for id, item in bag('menu').items() %}
-                <li{% if this.is_child_of(item.path) %} class="nav-item toc-entry toc-h2 active" {% else %} class="toc-entry toc-h2"{% endif %}><a class="nav-link" href="{{ item.path|url }}">{{ item.label }}</a></li>	          {% endfor %}
-              </ul>
-
-            </nav>
-	  </div>
-
-          {% block body %}{% endblock %}
-
-	</div>
+        <div class="row flex-xl-nowrap">
+          {% include 'sidenav.html' %}
+          <div class="row col-sm-12 col-xs-12 ml-sm-auto col-md-9 col-lg-9 mx-auto m-5">
+            {% block body %}{% endblock %}
+          </div>
+        </div>
       </div>
-
-
     </div>
-    <footer>
-      <script src="{{ '/static/js/jquery-3.2.1.min.js'|asseturl }}" ></script>
-      <script src="{{ '/static/js/popper.min.js'|asseturl }}" ></script>
-      <script src="{{ '/static/js/bootstrap.bundle.min.js'|asseturl }}" ></script>
-      <script src="{{ '/static/js/scrollspy.min.js'|asseturl }}" ></script>
-
+    <footer class="footer">
+      {% include 'footer.html' %}
     </footer>
   </body>
 </html>
