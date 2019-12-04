@@ -2,22 +2,22 @@
 {% block title %}{{ this.title }} | Tor Styleguide {% endblock %}
 {% block body %}
 
-<nav id="components-nav" class="nav flex-column d-none d-xl-block col-xl-1 bd-toc border">
-  <ul class="nav nav-pills flex-column sticky-top">
+<nav id="components-nav" class="nav flex-column d-none d-xl-block col-xl-1 border bg-white p-4 sticky-top">
+  <ul class="nav bd-toc flex-column">
     {% for id, item in bag('components').items() %}
       <li class="nav-item">
-        <a class="nav-link" href="{{ item.path }}">{{ item.label }}</a>
+        <a class="nav-link p-2" href="{{ item.path }}">{{ item.label }}</a>
       </li>
     {% endfor %}
   </ul>
 </nav>
 
-<main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5" data-offset="0">
-  <!--h1 class="mt-5">{{ this.title }}</h1-->
+<div class="row col-sm-12 col-xs-12 ml-sm-auto col-md-9 col-lg-9 mx-auto">
+
+<main role="main" class="col-12 col-md-10 col-xl-10 content-scroll" data-spy="scroll" data-offset="0">
 
   {{ this.body }}
 
-  <h1 id="buttons"> </h1>
   <div class="page-header mb-4 mt-5">
     <h3>Buttons</h3>
     <!--p class="text-muted">Some Description about buttons.</p-->

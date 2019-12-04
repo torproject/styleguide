@@ -9,15 +9,24 @@
 <title>{% block title %} | Tor Styleguide | The Tor Project {% endblock %}</title>
   <body class="no-gutters">
     <header>
-      {% include 'navbar.html' %}
+      {% include 'navbar-min.html' %}
     </header>
     <div class="page">
       <div class="container-fluid">
         <div class="row flex-xl-nowrap">
-          {% include 'sidenav.html' %}
-          <div class="row col-sm-12 col-xs-12 ml-sm-auto col-md-9 col-lg-9 mx-auto m-5">
-            {% block body %}{% endblock %}
-          </div>
+
+          <nav id="sidenav-topics" class="border bg-white p-4 sticky-top">
+             <ul class="nav bd-toc flex-column">
+                {% for id, item in bag('sidebar').items() %}
+               <li{% if this.is_child_of(item.path) %} class="nav-item active" {% else %} class="nav-item"{% endif %}>
+                <a class="nav-link p-1 pr-4" href="{{ item.path|url }}">{{ item.label }}</a>
+              </li>
+                {% endfor %}
+             </ul>
+           </nav>
+
+           {% block body %}{% endblock %}
+
         </div>
       </div>
     </div>
