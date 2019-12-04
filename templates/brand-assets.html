@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }} | Tor Styleguide {% endblock %}
+{% block body %}
+
+<div class="row col-sm-12 col-xs-12 ml-sm-auto col-md-9 col-lg-9 mx-auto">
+
+<main role="main" class="col-12 col-md-10 col-xl-10 content-scroll" data-spy="scroll" data-offset="0">
+
+  {{ this.body }}
+
+  <div class="page-header mb-4 mt-5">
+    <h3>Tor Project Assets</h3>
+    <p class="text-muted">The Tor Project brand assets are included here. Use them responsibly.</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="image border p-5">
+        <img src="/static/images/color.svg">
+      </div>
+      <h6 class="text-left pt-3">Default</h6>
+    </div>
+    <div class="col-sm-3">
+      <div class="image border p-5">
+        <img src="/static/images/purple.svg">
+      </div>
+      <h6 class="text-left pt-3">Purple</h6>
+    </div>
+    <div class="col-sm-3">
+      <div class="image border p-5">
+        <img src="/static/images/black.svg">
+      </div>
+      <h6 class="text-left pt-3">Black</h6>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-sm-3">
+      <div class="image border bg-primary p-5">
+        <img src="/static/images/white.svg">
+      </div>
+      <h6 class="text-left pt-3">Invert</h6>
+    </div>
+    <div class="col-sm-3">
+      <div class="image border bg-dark p-5">
+        <img src="/static/images/white.svg">
+      </div>
+      <h6 class="text-left pt-3">Dark</h6>
+    </div>
+    <div class="col-sm-6">
+      <div class="border p-5 text-left">
+        <h6>Download Tor Logo Assets</h6>
+        <p class="m-0">This package includes .png and .svg files</p>
+        <a class="btn btn-lg btn-link p-0" title="Tor Media Repo" href="https://github.com/TheTorProject/tor-media" target="_blank">Visit Repo</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="page-header mb-4 mt-5">
+    <h3>Tor Browser Assets</h3>
+    <p class="text-muted">Tor Browser icons for desktop and mobile are included here. Use them responsibly.</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="image border text-center p-5">
+        <img class="w-75" src="/static/images/tor-browser/stable/stable.svg">
+      </div>
+      <h6 class="text-left pt-3">Stable</h6>
+    </div>
+    <div class="col-sm-3">
+      <div class="image border text-center p-5">
+        <img class="w-75" src="/static/images/tor-browser/stable/stable.svg">
+      </div>
+      <h6 class="text-left pt-3">Android</h6>
+    </div>
+    <div class="col-sm-3">
+      <div class="image border text-center p-5">
+        <img class="w-75" src="/static/images/tor-browser/glyph/glyph.svg">
+      </div>
+      <h6 class="text-left pt-3">Glyph</h6>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-sm-3">
+      <div class="image border text-center p-5" style="background:#111;">
+        <img class="w-75" src="/static/images/tor-browser/alpha/alpha.svg"">
+      </div>
+      <h6 class="text-left pt-3">Alpha</h6>
+    </div>
+    <div class="col-sm-3">
+      <div class="image border bg-black text-center p-5" style="background:#111;">
+        <img class="w-75" src="/static/images/tor-browser/nightly/nightly.svg">
+      </div>
+      <h6 class="text-left pt-3">Nightly</h6>
+    </div>
+    <div class="col-sm-6">
+      <div class="border p-5 text-left">
+        <h6>Download Tor Browser Icon</h6>
+        <p class="m-0">This package includes .png and .svg files</p>
+        <a class="btn btn-lg btn-link p-0" title="Tor Media Repo" href="https://github.com/TheTorProject/tor-media" target="_blank">Visit Repo</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+{% endblock %}
