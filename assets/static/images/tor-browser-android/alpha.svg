@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>alpha</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.27248873%" x2="50%" y2="97.1599968%" id="linearGradient-1">
+            <stop stop-color="#00FEFF" offset="0%"></stop>
+            <stop stop-color="#0BE67D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.27248873%" x2="50%" y2="97.1599968%" id="linearGradient-2">
+            <stop stop-color="#00FEFF" offset="0%"></stop>
+            <stop stop-color="#0BE67D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M17.0898438,17.0898437 C104.253796,17.0898438 174.91414,87.4862018 174.91414,174.32451 C174.91414,261.162819 104.253796,331.559177 17.0898438,331.559177 L17.0898438,17.0898437 Z" id="path-3"></path>
+        <filter x="-30.4%" y="-12.7%" width="150.7%" height="125.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-8" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0872579578   0 0 0 0 0.00490370801   0 0 0 0 0.234933036  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="alpha" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Art" transform="translate(21.333333, 21.333333)">
+            <g id="Mask-/-Circle" fill="#FFFFFF">
+                <circle id="Mask_Circle" cx="234.5" cy="234.5" r="214.958333"></circle>
+            </g>
+            <rect id="Container" fill="#0B0B0B" fill-rule="nonzero" x="-21.3333333" y="-21.3333333" width="512" height="512"></rect>
+            <g id="tb_icon/Alpha" transform="translate(59.666667, 59.666667)">
+                <g id="Alpha">
+                    <circle id="background" fill-opacity="0.9" fill="#030004" fill-rule="nonzero" cx="175" cy="175" r="175"></circle>
+                    <path d="M175.358984,318.171675 L175.358984,296.957643 C242.556966,296.763597 296.967345,242.241642 296.967345,174.995149 C296.967345,107.753507 242.556966,53.2315518 175.358984,53.0375062 L175.358984,31.823474 C254.272468,32.0223707 318.176526,96.0380052 318.176526,174.995149 C318.176526,253.957144 254.272468,317.977629 175.358984,318.171675 L175.358984,318.171675 Z M175.358984,243.920136 C213.260936,243.72124 243.939541,212.950463 243.939541,174.995149 C243.939541,137.044686 213.260936,106.273909 175.358984,106.075012 L175.358984,84.8658313 C224.981288,85.0598769 265.153573,125.329184 265.153573,174.995149 C265.153573,224.665964 224.981288,264.935272 175.358984,265.129318 L175.358984,243.920136 Z M175.358984,137.893635 C195.690109,138.087681 212.120918,154.615513 212.120918,174.995149 C212.120918,195.379636 195.690109,211.907468 175.358984,212.101514 L175.358984,137.893635 Z M0,174.995149 C0,271.649249 78.3459001,350 175,350 C271.649249,350 350,271.649249 350,174.995149 C350,78.3459001 271.649249,2.84217094e-14 175,2.84217094e-14 C78.3459001,2.84217094e-14 0,78.3459001 0,174.995149 Z" id="center" fill="url(#linearGradient-1)"></path>
+                    <g id="half" transform="translate(96.001992, 174.324510) scale(-1, 1) translate(-96.001992, -174.324510) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

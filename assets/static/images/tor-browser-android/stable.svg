@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>stable</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#420C5D" offset="0%"></stop>
+            <stop stop-color="#951AD1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-2">
+            <stop stop-color="#D1A2FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-3">
+            <stop stop-color="#D1A2FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M17.2244094,16.5680473 C105.122484,16.5680473 176.377953,87.6549855 176.377953,175.345168 C176.377953,263.03535 105.122484,334.122288 17.2244094,334.122288 L17.2244094,16.5680473 Z" id="path-4"></path>
+        <filter x="-20.7%" y="-7.9%" width="131.4%" height="115.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="-8" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.0470588235   0 0 0 0 0.364705882  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="stable" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Art" transform="translate(21.333333, 21.333333)">
+            <g id="Mask-/-Circle" fill="#FFFFFF">
+                <circle id="Mask_Circle" cx="234.5" cy="234.5" r="214.958333"></circle>
+            </g>
+            <rect id="Container" fill="url(#linearGradient-1)" fill-rule="nonzero" x="-21.3333333" y="-21.3333333" width="512" height="512"></rect>
+            <g id="tb_icon/Light" transform="translate(59.666667, 59.666667)">
+                <g id="Light">
+                    <path d="M174.973708,349.327669 C78.3383976,349.327669 1.98951966e-13,271.128007 1.98951966e-13,174.663835 C1.98951966e-13,78.1996624 78.3383976,1.70530257e-13 174.973708,1.70530257e-13 C271.609019,1.70530257e-13 349.947416,78.1996624 349.947416,174.663835 C349.947416,271.128007 271.609019,349.327669 174.973708,349.327669 Z M174.973708,317.570608 C254.038962,317.570608 318.134015,253.589066 318.134015,174.663835 C318.134015,95.7386028 254.038962,31.7570608 174.973708,31.7570608 C95.9084541,31.7570608 31.8134015,95.7386028 31.8134015,174.663835 C31.8134015,253.589066 95.9084541,317.570608 174.973708,317.570608 Z M174.973708,296.399235 C107.621825,296.399235 53.0223358,241.89644 53.0223358,174.663835 C53.0223358,107.43123 107.621825,52.9284347 174.973708,52.9284347 C242.325591,52.9284347 296.925081,107.43123 296.925081,174.663835 C296.925081,241.89644 242.325591,296.399235 174.973708,296.399235 Z M174.973708,264.642174 C224.755535,264.642174 265.111679,224.357499 265.111679,174.663835 C265.111679,124.97017 224.755535,84.6854956 174.973708,84.6854956 C125.191882,84.6854956 84.8357373,124.97017 84.8357373,174.663835 C84.8357373,224.357499 125.191882,264.642174 174.973708,264.642174 Z M174.973708,243.4708 C136.905253,243.4708 106.044672,212.664872 106.044672,174.663835 C106.044672,136.662797 136.905253,105.856869 174.973708,105.856869 C213.042164,105.856869 243.902745,136.662797 243.902745,174.663835 C243.902745,212.664872 213.042164,243.4708 174.973708,243.4708 Z M174.973708,211.713739 C195.472107,211.713739 212.089343,195.125932 212.089343,174.663835 C212.089343,154.201738 195.472107,137.61393 174.973708,137.61393 C154.475309,137.61393 137.858073,154.201738 137.858073,174.663835 C137.858073,195.125932 154.475309,211.713739 174.973708,211.713739 Z" id="center" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                    <g id="half" transform="translate(96.801181, 175.345168) scale(-1, 1) translate(-96.801181, -175.345168) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
