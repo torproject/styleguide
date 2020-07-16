@@ -20,7 +20,7 @@ We also provide a minimal Lektor template website that you can start modifying. 
 <div class="border p-5 mb-3">
 <h6>Use The Tor Project Styleguide</h6>
 <p class="m-0">This package includes .scss and .css files</p>
-<a class="btn btn-lg btn-link p-0" title="Tor Media Repo" href="https://oniongit.eu/infra/styleguide" target="_blank">Visit Repo</a>
+<a class="btn btn-lg btn-link p-0" title="Tor Media Repo" href="https://gitlab.torproject.org/tpo/web/styleguide" target="_blank">Visit Repo</a>
 </div>
 
 ---
