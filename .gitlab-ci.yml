@@ -1,6 +1,7 @@
 ---
 variables:
   SITE_URL: styleguide.torproject.org
+  STAGING_URL: styleguide.staging.torproject.net
 
 include:
   - project: tpo/tpa/ci-templates
