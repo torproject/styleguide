@@ -1,8 +1,9 @@
+---
 variables:
   SITE_URL: styleguide.torproject.org
 
 include:
   - project: tpo/tpa/ci-templates
-    file: lektor.yml
-  - project: tpo/tpa/ci-templates
-    file: static-shim-deploy.yml
+    file:
+      - lektor.yml
+      - static-shim-deploy.yml
