@@ -1,5 +1,6 @@
 ---
 variables:
+  LEKTOR_BUILD_FLAGS: scss
   SITE_URL: styleguide.torproject.org
   STAGING_URL: styleguide.staging.torproject.net
 
